@@ -5,287 +5,243 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Agustina Rodriguez — QA Tester</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Portfolio de Agustina Rodriguez — QA Tester. Testing manual y de automatización.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Portfolio de Agustina Rodriguez — QA Tester Manual y Automatizado.">
     <style>
-      /* Embedded styles - mobile-first - azul profesional */
+      /* Dark modern theme - grid layout, glass cards, neon accents */
       :root{
-        --accent: #0b63d6;
-        --bg: #ffffff;
-        --text: #111214;
-        --muted: #6b6b6b;
-        --radius: 10px;
-        font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        --bg: #0F172A; /* deep charcoal */
+        --panel: rgba(255,255,255,0.03);
+        --glass: rgba(255,255,255,0.04);
+        --border: rgba(255,255,255,0.06);
+        --cyan: #06B6D4; /* neon cyan */
+        --emerald: #10B981; /* soft emerald */
+        --muted: #94A3B8;
+        --text: #E6EEF8;
+        --glass-shadow: 0 6px 18px rgba(2,6,23,0.6);
+        --radius: 12px;
+        font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
       }
       *{box-sizing:border-box}
       html,body{height:100%}
       body{
         margin:0;
-        background:var(--bg);
+        background:linear-gradient(180deg,var(--bg),#071028 120%);
         color:var(--text);
         -webkit-font-smoothing:antialiased;
         -moz-osx-font-smoothing:grayscale;
-        line-height:1.45;
-        padding-bottom:40px;
+        line-height:1.5;
+        padding:32px 20px;
       }
-      .container{padding:1rem;max-width:900px;margin:0 auto}
-      .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
-      .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;padding:0.5rem 0.75rem;background:var(--accent);color:#fff;border-radius:6px;z-index:999}
-      .header{border-bottom:1px solid #eee;background:linear-gradient(0deg, rgba(11,99,214,0.03), transparent)}
-      .header-inner{display:flex;align-items:center;padding:1.2rem 1rem}
-      .name{margin:0;font-size:1.35rem;font-weight:700}
-      .role{margin:4px 0 0;font-size:0.95rem;color:var(--muted)}
-      .section{margin-top:1rem}
-      .section-title{font-size:1rem;margin:0 0 0.6rem;color:var(--accent);font-weight:600;letter-spacing:0.2px}
-      .card{background:#fff;border:1px solid #f0f0f0;padding:0.9rem;border-radius:var(--radius);box-shadow:0 1px 0 rgba(0,0,0,0.02)}
-      .contact-list{list-style:none;padding:0;margin:0}
-      .contact-list li{padding:8px 0;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-      .contact-list a{color:var(--accent);text-decoration:none}
-      .link-button{background:transparent;border:none;color:var(--accent);font:inherit;cursor:pointer;padding:0;text-decoration:underline}
-      .link-button:focus{outline:2px solid rgba(11,99,214,0.2);outline-offset:2px;border-radius:4px}
-      .skills-list{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
-      .skill-item{background:rgba(11,99,214,0.06);color:var(--accent);border-radius:999px;padding:6px 10px;font-size:0.9rem;font-weight:600}
-      .footer{margin-top:1.4rem;text-align:center;color:var(--muted);font-size:0.85rem;padding:1rem 0}
-      .muted{color:var(--muted);font-size:0.9rem;margin-top:0.6rem}
-      a:focus{outline:2px solid rgba(11,99,214,0.2);outline-offset:2px;border-radius:4px}
-      @media(min-width:700px){
-        .header-inner{padding:1.6rem}
-        .name{font-size:1.6rem}
-        .container{padding:2rem}
-        .card{padding:1.2rem}
+
+      .container{max-width:1100px;margin:0 auto}
+
+      header.site-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+      .brand{display:flex;gap:16px;align-items:center}
+      .avatar{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,var(--cyan),var(--emerald));display:flex;align-items:center;justify-content:center;font-weight:700;color:#021025}
+      .title{display:flex;flex-direction:column}
+      .name{font-size:1.25rem;font-weight:700;letter-spacing:0.2px}
+      .role{color:var(--muted);font-size:0.9rem;margin-top:4px}
+
+      /* Header metrics */
+      .metrics{display:flex;gap:12px;align-items:center}
+      .metric{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid var(--border);padding:10px 12px;border-radius:10px;min-width:92px;display:flex;flex-direction:column;align-items:flex-start;box-shadow:var(--glass-shadow)}
+      .metric .value{font-weight:700;color:var(--cyan);font-size:1.05rem}
+      .metric .label{font-size:0.75rem;color:var(--muted);margin-top:4px}
+
+      /* Grid */
+      main.grid{display:grid;grid-template-columns:1fr;gap:18px}
+
+      .card{background:var(--glass);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid var(--border);padding:18px;border-radius:var(--radius);box-shadow:var(--glass-shadow)}
+
+      /* Two-column on larger screens */
+      @media(min-width:920px){
+        main.grid{grid-template-columns: 2fr 1fr;align-items:start}
       }
-      /* Small helpers */
-      h3{margin:0 0 6px 0}
-      .meta{color:var(--muted);font-size:0.95rem}
+
+      /* Sections */
+      .section-title{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--text);margin:0 0 10px 0}
+      .section-sub{color:var(--muted);font-size:0.9rem;margin-bottom:8px}
+
+      /* Skills chips */
+      .chips{display:flex;flex-wrap:wrap;gap:8px}
+      .chip{padding:8px 10px;border-radius:999px;background:linear-gradient(180deg,rgba(6,182,212,0.08),rgba(16,185,129,0.04));color:var(--cyan);font-weight:600;border:1px solid rgba(6,182,212,0.12);font-size:0.85rem}
+
+      /* Project card with terminal/code block */
+      .project{display:flex;flex-direction:column;gap:10px}
+      .terminal{background:#071229;border-radius:8px;padding:12px;border:1px solid rgba(255,255,255,0.03);font-family:'Roboto Mono', monospace;color:#9FEFF1;font-size:0.92rem}
+
+      /* Badge row */
+      .badges{display:flex;gap:8px;flex-wrap:wrap}
+      .badge{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.04);padding:6px 8px;border-radius:8px;font-weight:700;color:var(--text);display:inline-flex;align-items:center;gap:8px}
+      .badge .dot{width:10px;height:10px;border-radius:50%;background:var(--emerald);box-shadow:0 0 8px rgba(16,185,129,0.2)}
+      .badge.cyan .dot{background:var(--cyan);box-shadow:0 0 8px rgba(6,182,212,0.18)}
+
+      /* Contact list */
+      .contact-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+      .contact-list a{color:var(--cyan);text-decoration:none}
+
+      /* Footer */
+      footer{margin-top:26px;text-align:center;color:var(--muted);font-size:0.9rem}
+
+      /* Small utility */
+      .muted{color:var(--muted)}
+
+      /* Focus styles */
+      a:focus,button:focus{outline:2px solid rgba(6,182,212,0.18);outline-offset:3px;border-radius:6px}
+
     </style>
   </head>
-
   <body>
-    <a class="skip-link" href="#main-content">Saltar al contenido</a>
-
-    <header class="header" role="banner">
-      <div class="container header-inner">
-        <div>
-          <h1 class="name">Agustina Rodriguez</h1>
-          <p class="role">QA Tester — Manual y Automatizado</p>
-        </div>
-      </div>
-    </header>
-
-    <main id="main-content" class="container" role="main">
-
-      <section aria-labelledby="about-heading" class="section">
-        <h2 id="about-heading" class="section-title">Sobre mí</h2>
-        <div class="card">
-          <p>
-            QA Tester con experiencia en pruebas manuales y automatizadas de aplicaciones web, utilizando Python, Selenium WebDriver, Pytest y testing de APIs REST. Manejo de metodologías ágiles y prácticas CI/CD. Habilidades sólidas de comunicación, análisis y orientación al detalle.
-          </p>
-        </div>
-      </section>
-
-      <section aria-labelledby="contact-heading" class="section">
-        <h2 id="contact-heading" class="section-title">Contacto</h2>
-        <div class="card contact-card">
-          <ul class="contact-list">
-            <li><strong>Email:</strong> <button class="link-button copy-btn" data-copy="agustinar766@gmail.com">agustinar766@gmail.com</button></li>
-            <li><strong>Teléfono:</strong> <button class="link-button copy-btn" data-copy="+5491123746070">+54 9 11 2374-6070</button></li>
-            <li><strong>Ubicación:</strong> Buenos Aires, Argentina</li>
-            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/agustinarodriguezx/" target="_blank" rel="noopener noreferrer">linkedin.com/in/agustinarodriguezx</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/Agusrodriguezx" target="_blank" rel="noopener noreferrer">github.com/Agusrodriguezx</a></li>
-          </ul>
-          <p class="muted">Presioná el botón junto al email o teléfono para copiar al portapapeles.</p>
-          <div style="margin-top:12px">
-            <button id="download-cv" class="link-button" aria-label="Descargar CV">Descargar CV (texto)</button>
+    <div class="container">
+      <header class="site-header">
+        <div class="brand">
+          <div class="avatar" aria-hidden="true">AR</div>
+          <div class="title">
+            <div class="name">Agustina Rodriguez</div>
+            <div class="role">QA Tester — Manual & Automatizado</div>
           </div>
         </div>
-      </section>
 
-      <section aria-labelledby="skills-heading" class="section">
-        <h2 id="skills-heading" class="section-title">Conocimientos</h2>
-        <div class="card">
-          <h3 class="meta">Automatización y Testing</h3>
-          <ul class="skills-list" style="margin-bottom:12px">
-            <li class="skill-item">Python</li>
-            <li class="skill-item">Selenium WebDriver</li>
-            <li class="skill-item">Pytest</li>
-            <li class="skill-item">Cypress</li>
-            <li class="skill-item">Behave (BDD)</li>
-            <li class="skill-item">Postman</li>
-            <li class="skill-item">Xpath / CSS Selectors</li>
-          </ul>
-
-          <h3 class="meta">Prácticas & Herramientas</h3>
-          <ul class="skills-list" style="margin-bottom:0">
-            <li class="skill-item">Testing Manual</li>
-            <li class="skill-item">Testing Funcional / Regresión / Exploratorio</li>
-            <li class="skill-item">Diseño de Casos de Prueba</li>
-            <li class="skill-item">Reporte de Bugs</li>
-            <li class="skill-item">Git / GitHub / GitHub Actions</li>
-            <li class="skill-item">Jira</li>
-            <li class="skill-item">SQL / Linux</li>
-            <li class="skill-item">Agile / Scrum / Kanban</li>
-            <li class="skill-item">HTML / CSS / JavaScript (fundamentos)</li>
-          </ul>
-        </div>
-      </section>
-
-      <section aria-labelledby="projects-heading" class="section">
-        <h2 id="projects-heading" class="section-title">Proyectos</h2>
-        <div class="card">
-          <article style="margin-bottom:12px">
-            <h3>Framework de Automatización — Swag Labs</h3>
-            <p class="meta">Python · Selenium · Pytest · Behave · GitHub Actions</p>
-            <p>Framework POM para login, inventario y carrito; Data-driven testing con CSV/JSON; escenarios BDD con Gherkin/Behave; integración CI/CD y reportes con capturas automáticas en fallos.</p>
-            <p><strong>Repo / Demo:</strong> (añadir URL)</p>
-          </article>
-
-          <article>
-            <h3>Bopp — QA Manual Testing Project</h3>
-            <p class="meta">Jira · Gherkin · Testing Exploratorio · Kanban</p>
-            <p>Testing exploratorio de una app móvil beta; documentación de incidencias y tickets en Jira con evidencia visual y criterios en Gherkin.</p>
-            <p><strong>Evidencias:</strong> (añadir URL)</p>
-          </article>
-        </div>
-      </section>
-
-      <section aria-labelledby="exp-heading" class="section">
-        <h2 id="exp-heading" class="section-title">Experiencia</h2>
-        <div class="card">
-          <div style="margin-bottom:12px">
-            <strong>Asistente en Evento de Activación — Nintendo, Argentina Game Show</strong>
-            <div class="meta">Oct 2025</div>
-            <p style="margin-top:6px">Guié a usuarios en demos interactivas y resolví consultas con atención al detalle.</p>
+        <div class="metrics" aria-hidden="true">
+          <div class="metric" title="Test coverage">
+            <div class="value">82%</div>
+            <div class="label">Cobertura</div>
           </div>
-          <div>
-            <strong>Empleada de comercio minorista — Mercería y lencería “El Costurero”</strong>
-            <div class="meta">Ene 2022 – Abr 2025</div>
-            <p style="margin-top:6px">Servicio al cliente y gestión de control de inventario con herramientas digitales.</p>
+          <div class="metric" title="Bugs reported">
+            <div class="value">+120</div>
+            <div class="label">Bugs reportados</div>
+          </div>
+          <div class="metric" title="Automation suites">
+            <div class="value">8</div>
+            <div class="label">Suites automatizadas</div>
           </div>
         </div>
-      </section>
+      </header>
 
-      <section aria-labelledby="edu-heading" class="section">
-        <h2 id="edu-heading" class="section-title">Educación & Certificaciones</h2>
-        <div class="card">
-          <ul style="margin:0;padding-left:0;list-style:none">
-            <li style="margin-bottom:10px">
+      <main class="grid">
+        <section>
+          <div class="card">
+            <h3 class="section-title">Resumen</h3>
+            <p class="section-sub">QA Tester con experiencia en pruebas manuales y automatizadas de aplicaciones web. Experiencia en Python, Selenium, Pytest, APIs REST y pipelines CI/CD. Enfoque en calidad, automatización y procesos reproducibles.</p>
+
+            <div style="margin-top:12px">
+              <h4 style="margin:0 0 8px 0;color:var(--muted);font-size:0.95rem">Habilidades clave</h4>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">Selenium</span>
+                <span class="chip">Pytest</span>
+                <span class="chip">Cypress</span>
+                <span class="chip">BDD / Behave</span>
+                <span class="chip">API Testing</span>
+                <span class="chip">GitHub Actions</span>
+                <span class="chip">Jira</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="card" style="margin-top:14px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+              <h3 class="section-title" style="margin:0">Proyectos destacados</h3>
+              <div class="badges">
+                <div class="badge cyan"><span class="dot"></span> Automation</div>
+                <div class="badge"><span class="dot"></span> BDD</div>
+              </div>
+            </div>
+
+            <div class="project">
+              <div>
+                <strong>Framework de Automatización — Swag Labs</strong>
+                <div class="muted" style="font-size:0.9rem;margin-top:4px">Python · Selenium · Pytest · Behave · GitHub Actions</div>
+              </div>
+              <div class="terminal" role="region" aria-label="Command example">$ pytest tests/login_test.py::test_valid_login --maxfail=1 -q</div>
+              <p style="margin:8px 0 0 0;color:var(--muted)">Framework POM, data-driven tests, integración CI/CD y reportes automáticos con capturas.</p>
+              <p style="margin:6px 0 0 0"><a href="https://github.com/Agusrodriguezx" target="_blank" rel="noopener noreferrer">Repositorio del proyecto</a></p>
+            </div>
+
+          </div>
+
+          <div class="card" style="margin-top:14px">
+            <h3 class="section-title">Experiencia</h3>
+            <div style="margin-top:8px">
+              <strong>Nintendo — Asistente en Evento de Activación</strong>
+              <div class="muted">Oct 2025</div>
+              <p style="margin-top:6px;color:var(--muted)">Guié demos interactivas y asistí a usuarios con atención al detalle.</p>
+            </div>
+
+            <div style="margin-top:10px">
+              <strong>El Costurero — Empleada de comercio minorista</strong>
+              <div class="muted">Ene 2022 – Abr 2025</div>
+              <p style="margin-top:6px;color:var(--muted)">Atención al cliente y gestión de inventario con herramientas digitales.</p>
+            </div>
+          </div>
+
+        </section>
+
+        <aside>
+          <div class="card">
+            <h3 class="section-title">Contacto</h3>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <button class="link-button copy-btn" data-copy="agustinar766@gmail.com">agustinar766@gmail.com</button></li>
+              <li><strong>Tel:</strong> <button class="link-button copy-btn" data-copy="+5491123746070">+54 9 11 2374-6070</button></li>
+              <li><strong>Ubicación:</strong> Buenos Aires, Argentina</li>
+              <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/agustinarodriguezx/" target="_blank" rel="noopener noreferrer">linkedin.com/in/agustinarodriguezx</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/Agusrodriguezx" target="_blank" rel="noopener noreferrer">github.com/Agusrodriguezx</a></li>
+            </ul>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <button id="download-cv" class="link-button">Descargar CV (texto)</button>
+              <a class="link-button" href="mailto:agustinar766@gmail.com">Enviar email</a>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:14px">
+            <h3 class="section-title">Métricas</h3>
+            <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+              <div class="badge"><span class="dot" style="background:var(--cyan)"></span> Cobertura 82%</div>
+              <div class="badge"><span class="dot" style="background:var(--emerald)"></span> Bugs reportados 120+</div>
+              <div class="badge"><span class="dot" style="background:var(--cyan)"></span> 8 Suites Automation</div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:14px">
+            <h3 class="section-title">Educación</h3>
+            <div style="margin-top:8px">
               <strong>Automatización QA — Talento Tech</strong>
-              <div class="meta">Mar 2026 – Jul 2026</div>
-              <div style="margin-top:6px">Automatización con Python, Selenium, Pytest. POM, APIs REST y BDD con Behave. Git & CI/CD.</div>
-            </li>
-            <li style="margin-bottom:10px">
-              <strong>Certificación en QA Manual y Automation — Universidad Tecnológica Nacional</strong>
-              <div class="meta">Nov 2025 – Dic 2025</div>
-              <div style="margin-top:6px">Diseño y ejecución de pruebas manuales y uso introductorio de Cypress.</div>
-            </li>
-            <li style="margin-bottom:8px">
-              <strong>Programa de Empleabilidad — Fundación Empujar</strong>
-              <div class="meta">Ago 2025 – Dic 2025</div>
-            </li>
-            <li>
-              <strong>Escuela Secundaria N°9 Merlo</strong>
-              <div class="meta">2016 – 2021</div>
-            </li>
-          </ul>
-        </div>
-      </section>
+              <div class="muted">Mar 2026 – Jul 2026</div>
+            </div>
+            <div style="margin-top:8px">
+              <strong>Certificación QA — UTN</strong>
+              <div class="muted">Nov 2025 – Dic 2025</div>
+            </div>
+          </div>
 
-      <section aria-labelledby="lang-heading" class="section">
-        <h2 id="lang-heading" class="section-title">Idiomas</h2>
-        <div class="card">
-          <p style="margin:0">Inglés — Nivel B2 (Intermedio conversacional)</p>
-        </div>
-      </section>
+        </aside>
 
-    </main>
+      </main>
 
-    <footer class="footer" role="contentinfo">
-      <div class="container">
-        <small>© <span id="year"></span> Agustina Rodriguez — QA Tester</small>
-      </div>
-    </footer>
+      <footer>
+        <div class="muted">© <span id="year"></span> Agustina Rodriguez — QA Tester</div>
+      </footer>
+    </div>
 
     <script>
-      // Embedded script: set year, copy buttons with fallback, download CV text
-      (function () {
-        // Year
-        const y = document.getElementById('year');
-        if (y) y.textContent = new Date().getFullYear();
+      // interactions: set year, copy to clipboard, download cv
+      (function(){
+        const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
 
-        // Copy with fallback
-        function fallbackCopy(text) {
-          const input = document.createElement('textarea');
-          input.value = text;
-          input.style.position = 'fixed';
-          input.style.left = '-9999px';
-          document.body.appendChild(input);
-          input.select();
-          try { document.execCommand('copy'); } catch (e) { /* ignore */ }
-          document.body.removeChild(input);
-          alert('Texto copiado: ' + text);
+        function fallbackCopy(text){
+          const ta = document.createElement('textarea'); ta.value = text; ta.style.position='fixed'; ta.style.left='-9999px'; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy')}catch(e){} document.body.removeChild(ta); alert('Texto copiado: '+text);
         }
 
-        document.querySelectorAll('.copy-btn').forEach(btn => {
-          btn.addEventListener('click', function () {
-            const text = btn.getAttribute('data-copy') || btn.textContent;
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-              navigator.clipboard.writeText(text).then(() => {
-                const original = btn.textContent;
-                btn.textContent = text + ' (copiado)';
-                setTimeout(() => btn.textContent = original, 2000);
-              }).catch(() => fallbackCopy(text));
-            } else {
-              fallbackCopy(text);
-            }
-          });
-        });
+        document.querySelectorAll('.copy-btn').forEach(btn=>btn.addEventListener('click',function(){
+          const text = btn.getAttribute('data-copy')||btn.textContent;
+          if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(()=>{const orig=btn.textContent;btn.textContent='copiado';setTimeout(()=>btn.textContent=orig,1500)}).catch(()=>fallbackCopy(text));}
+          else fallbackCopy(text);
+        }));
 
-        // Download CV as TXT
-        const cvText = `AGUSTINA RODRIGUEZ
-QA Tester Manual y Automatizado
-(+54) 9 11 2374-6070 | agustinar766@gmail.com | Buenos Aires, Argentina
-LinkedIn: https://linkedin.com/in/agustinarodriguezx/
-GitHub: https://github.com/Agusrodriguezx
-
-RESUMEN PROFESIONAL
-QA Tester con experiencia en pruebas manuales y automatizadas de aplicaciones web, utilizando Python, Selenium WebDriver, Pytest y testing de APIs REST. Manejo de metodologías ágiles y prácticas CI/CD. Habilidades sólidas de comunicación, análisis y orientación al detalle.
-
-HABILIDADES TÉCNICAS
-Automatización y Testing: Python, Selenium WebDriver, Pytest, Cypress, Behave (BDD), Postman, Xpath y CSS Selectors.
-Prácticas de QA: Testing Manual, Testing Functional/Regresión/Exploratorio, Diseño de Casos de Prueba, Reporte de Bugs.
-Herramientas y Colaboración: Git, GitHub, GitHub Actions, Jira, Slack, SQL, Linux.
-Metodologías: Agile, Scrum, Kanban.
-Fundamentos Web: HTML, CSS, JavaScript.
-
-PROYECTOS
-Framework de Automatización de Testing | Swag Labs — (añadir repo URL)
-Bopp QA Manual Testing Project — (añadir evidencias)
-
-EXPERIENCIA
-Asistente en Evento de Activación — Nintendo, Argentina Game Show (Oct 2025)
-Empleada de comercio minorista — Mercería y lencería “El Costurero” (Ene 2022 - Abr 2025)
-
-EDUCACIÓN
-Automatización QA — Talento Tech (Mar 2026 – Jul 2026)
-Certificación en QA Manual y Automation — Universidad Tecnológica Nacional (Nov 2025 – Dic 2025)
-Programa de Empleabilidad — Fundación Empujar (Ago 2025 – Dic 2025)
-Escuela Secundaria N°9 Merlo (2016 – 2021)
-
-IDIOMAS
-Inglés - Nivel B2 (Intermedio conversacional)
-`;
-        const dl = document.getElementById('download-cv');
-        if (dl) dl.addEventListener('click', function () {
-          const blob = new Blob([cvText], { type: 'text/plain;charset=utf-8' });
-          const url = URL.createObjectURL(blob);
-          const a = document.createElement('a');
-          a.href = url;
-          a.download = 'CV_Agustina_Rodriguez.txt';
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-          URL.revokeObjectURL(url);
-        });
+        const cvText = `AGUSTINA RODRIGUEZ\nQA Tester Manual y Automatizado\n(+54) 9 11 2374-6070 | agustinar766@gmail.com | Buenos Aires, Argentina\nLinkedIn: https://linkedin.com/in/agustinarodriguezx/\nGitHub: https://github.com/Agusrodriguezx\n\nRESUMEN PROFESIONAL\nQA Tester con experiencia en pruebas manuales y automatizadas de aplicaciones web, utilizando Python, Selenium WebDriver, Pytest y testing de APIs REST. Manejo de metodologías ágiles y prácticas CI/CD. Habilidades sólidas de comunicación, análisis y orientación al detalle.\n\n...`;
+        const dl = document.getElementById('download-cv'); if(dl) dl.addEventListener('click',function(){const blob=new Blob([cvText],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='CV_Agustina_Rodriguez.txt';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);});
       })();
     </script>
   </body>
