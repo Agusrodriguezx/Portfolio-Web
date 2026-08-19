@@ -38,21 +38,21 @@
 
       header.site-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
       .brand{display:flex;gap:16px;align-items:center}
-      .avatar{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,var(--cyan),var(--emerald));display:flex;align-items:center;justify-content:center;font-weight:700;color:#021025}
+      .avatar{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,var(--cyan),var(--emerald));display:flex;align-items:center;justify-content:center;font-weight:700;color:#[...]}
       .title{display:flex;flex-direction:column}
       .name{font-size:1.25rem;font-weight:700;letter-spacing:0.2px}
       .role{color:var(--muted);font-size:0.9rem;margin-top:4px}
 
       /* Header metrics */
       .metrics{display:flex;gap:12px;align-items:center}
-      .metric{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid var(--border);padding:10px 12px;border-radius:10px;min-width:92px;display:flex;flex-direction:column;align-items:flex-start;box-shadow:var(--glass-shadow)}
+      .metric{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid var(--border);padding:10px 12px;border-radius:10px;min-width:92px;display:flex;flex-[...]}
       .metric .value{font-weight:700;color:var(--cyan);font-size:1.05rem}
       .metric .label{font-size:0.75rem;color:var(--muted);margin-top:4px}
 
       /* Grid */
       main.grid{display:grid;grid-template-columns:1fr;gap:18px}
 
-      .card{background:var(--glass);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid var(--border);padding:18px;border-radius:var(--radius);box-shadow:var(--glass-shadow)}
+      .card{background:var(--glass);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid var(--border);padding:18px;border-radius:var(--radius);box-shadow:var(--glass-shado[...]}
 
       /* Two-column on larger screens */
       @media(min-width:920px){
@@ -65,7 +65,7 @@
 
       /* Skills chips */
       .chips{display:flex;flex-wrap:wrap;gap:8px}
-      .chip{padding:8px 10px;border-radius:999px;background:linear-gradient(180deg,rgba(6,182,212,0.08),rgba(16,185,129,0.04));color:var(--cyan);font-weight:600;border:1px solid rgba(6,182,212,0.12);font-size:0.85rem}
+      .chip{padding:8px 10px;border-radius:999px;background:linear-gradient(180deg,rgba(6,182,212,0.08),rgba(16,185,129,0.04));color:var(--cyan);font-weight:600;border:1px solid rgba(6,182,212,0.1[...])}
 
       /* Project card with terminal/code block */
       .project{display:flex;flex-direction:column;gap:10px}
@@ -73,7 +73,7 @@
 
       /* Badge row */
       .badges{display:flex;gap:8px;flex-wrap:wrap}
-      .badge{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.04);padding:6px 8px;border-radius:8px;font-weight:700;color:var(--text);display:inline-flex;align-items:center;gap:8px}
+      .badge{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.04);padding:6px 8px;border-radius:8px;font-weight:700;color:var(--text);display:inline-flex;align-items:center;ga[...]}
       .badge .dot{width:10px;height:10px;border-radius:50%;background:var(--emerald);box-shadow:0 0 8px rgba(16,185,129,0.2)}
       .badge.cyan .dot{background:var(--cyan);box-shadow:0 0 8px rgba(6,182,212,0.18)}
 
@@ -123,7 +123,7 @@
         <section>
           <div class="card">
             <h3 class="section-title">Resumen</h3>
-            <p class="section-sub">QA Tester con experiencia en pruebas manuales y automatizadas de aplicaciones web. Experiencia en Python, Selenium, Pytest, APIs REST y pipelines CI/CD. Enfoque en calidad, automatización y procesos reproducibles.</p>
+            <p class="section-sub">QA Tester con experiencia en pruebas manuales y automatizadas de aplicaciones web. Experiencia en Python, Selenium, Pytest, APIs REST y pipelines CI/CD. Enfoque[...]</p>
 
             <div style="margin-top:12px">
               <h4 style="margin:0 0 8px 0;color:var(--muted);font-size:0.95rem">Habilidades clave</h4>
@@ -158,6 +158,18 @@
               <div class="terminal" role="region" aria-label="Command example">$ pytest tests/login_test.py::test_valid_login --maxfail=1 -q</div>
               <p style="margin:8px 0 0 0;color:var(--muted)">Framework POM, data-driven tests, integración CI/CD y reportes automáticos con capturas.</p>
               <p style="margin:6px 0 0 0"><a href="https://github.com/Agusrodriguezx" target="_blank" rel="noopener noreferrer">Repositorio del proyecto</a></p>
+            </div>
+
+            <!-- Nueva tarjeta de proyecto agregada -->
+            <div class="project" style="margin-top:12px">
+              <div>
+                <strong>Cinema Ticket Booking</strong>
+                <div class="muted" style="font-size:0.9rem;margin-top:4px">app de reserva de tickets para funciones de cine.</div>
+              </div>
+              <div class="badges" style="margin-top:8px">
+                <div class="badge"><span class="dot" style="background:var(--emerald)"></span> En progreso</div>
+              </div>
+              <p style="margin:8px 0 0 0;color:var(--muted)">Sin link externo por ahora</p>
             </div>
 
           </div>
@@ -231,17 +243,17 @@
         const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
 
         function fallbackCopy(text){
-          const ta = document.createElement('textarea'); ta.value = text; ta.style.position='fixed'; ta.style.left='-9999px'; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy')}catch(e){} document.body.removeChild(ta); alert('Texto copiado: '+text);
+          const ta = document.createElement('textarea'); ta.value = text; ta.style.position='fixed'; ta.style.left='-9999px'; document.body.appendChild(ta); ta.select(); try{document.execCommand([...]
         }
 
         document.querySelectorAll('.copy-btn').forEach(btn=>btn.addEventListener('click',function(){
           const text = btn.getAttribute('data-copy')||btn.textContent;
-          if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(()=>{const orig=btn.textContent;btn.textContent='copiado';setTimeout(()=>btn.textContent=orig,1500)}).catch(()=>fallbackCopy(text));}
+          if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(()=>{const orig=btn.textContent;btn.textContent='copiado';setTimeout(()=>btn.textContent=[...]
           else fallbackCopy(text);
         }));
 
-        const cvText = `AGUSTINA RODRIGUEZ\nQA Tester Manual y Automatizado\n(+54) 9 11 2374-6070 | agustinar766@gmail.com | Buenos Aires, Argentina\nLinkedIn: https://linkedin.com/in/agustinarodriguezx/\nGitHub: https://github.com/Agusrodriguezx\n\nRESUMEN PROFESIONAL\nQA Tester con experiencia en pruebas manuales y automatizadas de aplicaciones web, utilizando Python, Selenium WebDriver, Pytest y testing de APIs REST. Manejo de metodologías ágiles y prácticas CI/CD. Habilidades sólidas de comunicación, análisis y orientación al detalle.\n\n...`;
-        const dl = document.getElementById('download-cv'); if(dl) dl.addEventListener('click',function(){const blob=new Blob([cvText],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='CV_Agustina_Rodriguez.txt';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);});
+        const cvText = `AGUSTINA RODRIGUEZ\nQA Tester Manual y Automatizado\n(+54) 9 11 2374-6070 | agustinar766@gmail.com | Buenos Aires, Argentina\nLinkedIn: https://linkedin.com/in/agustinarod[...]`
+        const dl = document.getElementById('download-cv'); if(dl) dl.addEventListener('click',function(){const blob=new Blob([cvText],{type:'text/plain;charset=utf-8'});const url=URL.createObject[...]
       })();
     </script>
   </body>
