@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2z4Mkv9bMJvFVcAr/ufuaPCbjo8YPf2yC1z89GSuC5flwdPK5nDy9latAyxAJg8JSuEkA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -19,8 +21,11 @@
     <header class="header">
       <div class="container header-inner">
         <div class="header-brand">
-          <p class="name">Agustina Rodríguez</p>
-          <p class="role">QA Tester — Manual &amp; Automatizada</p>
+          <img src="assets/fotocv.jpeg" alt="Foto de Agustina Rodríguez" class="header-photo" />
+          <div class="header-text">
+            <p class="name">Agustina Rodríguez</p>
+            <p class="role">QA Tester — Manual &amp; Automatizada</p>
+          </div>
         </div>
         <div class="status-stamp" aria-hidden="true">
           <span class="status-dot"></span>
@@ -29,166 +34,206 @@
       </div>
     </header>
 
-    <main id="main" class="container">
-      <section class="section card" aria-labelledby="resumen-title">
-        <h2 class="section-title" id="resumen-title">Resumen</h2>
-        <p>
-          Soy QA Tester con formación en testing manual y automatizado de aplicaciones web. Combino
-          pruebas exploratorias y funcionales con automatización en Python, Selenium y Pytest, y
-          trabajo cómoda tanto documentando bugs en Jira como armando frameworks de testing con
-          integración continua. Vengo de tres años en atención al cliente, así que la comunicación
-          clara y la atención al detalle son parte natural de cómo trabajo.
-        </p>
-
-        <div class="skills-groups">
-          <div class="skills-group">
-            <h3 class="skills-group-title">Automatización y testing</h3>
-            <ul class="skills-list">
-              <li class="skill-item">Python</li>
-              <li class="skill-item">Selenium WebDriver</li>
-              <li class="skill-item">Pytest</li>
-              <li class="skill-item">Cypress</li>
-              <li class="skill-item">Behave (BDD)</li>
-              <li class="skill-item">Postman</li>
-            </ul>
-          </div>
-          <div class="skills-group">
-            <h3 class="skills-group-title">Prácticas de QA</h3>
-            <ul class="skills-list">
-              <li class="skill-item">Testing manual</li>
-              <li class="skill-item">Funcional / Regresión</li>
-              <li class="skill-item">Testing exploratorio</li>
-              <li class="skill-item">Diseño de casos de prueba</li>
-              <li class="skill-item">Reporte de bugs</li>
-            </ul>
-          </div>
-          <div class="skills-group">
-            <h3 class="skills-group-title">Herramientas y colaboración</h3>
-            <ul class="skills-list">
-              <li class="skill-item">Git / GitHub</li>
-              <li class="skill-item">GitHub Actions</li>
-              <li class="skill-item">Jira</li>
-              <li class="skill-item">SQL</li>
-              <li class="skill-item">Scrum / Kanban</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="proyectos-title">
-        <h2 class="section-title" id="proyectos-title">Proyectos destacados</h2>
-
-        <article class="card project-card">
-          <div class="project-head">
-            <h3>Bopp — QA Manual Testing Project</h3>
-            <span class="status-tag">✓ Completado</span>
-          </div>
-          <p class="project-tech">Jira · Gherkin · Testing exploratorio · Kanban</p>
+    <div class="layout-wrapper">
+      <main id="main" class="container main-content">
+        <section class="section card" aria-labelledby="resumen-title">
+          <h2 class="section-title" id="resumen-title">Resumen</h2>
           <p>
-            Testing exploratorio sobre una aplicación móvil en fase beta. Documenté más de 6 tickets
-            en Jira con formato estructurado (contexto, criterios de aceptación, validación de QA y
-            evidencia), organizados en un flujo Kanban entre las épicas de Bugs y Mejoras. Los
-            criterios de aceptación los redacté en sintaxis Gherkin, con capturas de pantalla y
-            grabaciones como evidencia de cada incidencia.
+            Soy QA Tester con formación en testing manual y automatizado de aplicaciones web. Combino
+            pruebas exploratorias y funcionales con automatización en Python, Selenium y Pytest, y
+            trabajo cómoda tanto documentando bugs en Jira como armando frameworks de testing con
+            integración continua. Vengo de tres años en atención al cliente, así que la comunicación
+            clara y la atención al detalle son parte natural de cómo trabajo.
           </p>
-          <a class="link-button" href="https://github.com/Agusrodriguezx/Bopp-QA-Project" target="_blank" rel="noopener noreferrer">
-            Ver repositorio →
-          </a>
-        </article>
 
-        <article class="card project-card">
-          <div class="project-head">
-            <h3>Framework de automatización — Swag Labs</h3>
-            <span class="status-tag">✓ Completado</span>
-          </div>
-          <p class="project-tech">Python · Selenium WebDriver · Pytest · Behave · GitHub Actions</p>
-          <p>
-            Framework de automatización con Page Object Model (POM) para cubrir login, inventario y
-            carrito de compras. Implementé Data-Driven Testing con datasets en CSV/JSON (casos
-            positivos y negativos), automaticé escenarios BDD con Gherkin y Behave, y sumé tests de
-            APIs REST con Requests. El pipeline de CI/CD en GitHub Actions corre la suite completa en
-            cada push y genera reportes HTML con capturas automáticas ante fallos.
-          </p>
-          <a class="link-button" href="https://github.com/Agusrodriguezx/swag-labs-test-automation" target="_blank" rel="noopener noreferrer">
-            Ver repositorio →
-          </a>
-        </article>
-      </section>
-
-      <section class="section card" aria-labelledby="experiencia-title">
-        <h2 class="section-title" id="experiencia-title">Experiencia</h2>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-head">
-              <strong>Asistente en evento de activación — Nintendo, Argentina Game Show 2025</strong>
-              <span class="muted">Oct 2025</span>
+          <div class="skills-groups">
+            <div class="skills-group">
+              <h3 class="skills-group-title">Automatización y testing</h3>
+              <ul class="skills-list">
+                <li class="skill-item">Python</li>
+                <li class="skill-item">Selenium WebDriver</li>
+                <li class="skill-item">Pytest</li>
+                <li class="skill-item">Cypress</li>
+                <li class="skill-item">Behave (BDD)</li>
+                <li class="skill-item">Postman</li>
+              </ul>
             </div>
-            <ul>
-              <li>Guiar a los usuarios a través de demos interactivas, resolviendo consultas con atención al detalle.</li>
-            </ul>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-head">
-              <strong>Empleada de comercio minorista — Mercería y lencería "El Costurero"</strong>
-              <span class="muted">Ene 2022 – Abr 2025</span>
+            <div class="skills-group">
+              <h3 class="skills-group-title">Prácticas de QA</h3>
+              <ul class="skills-list">
+                <li class="skill-item">Testing manual</li>
+                <li class="skill-item">Funcional / Regresión</li>
+                <li class="skill-item">Testing exploratorio</li>
+                <li class="skill-item">Diseño de casos de prueba</li>
+                <li class="skill-item">Reporte de bugs</li>
+              </ul>
             </div>
-            <ul>
-              <li>Brindar servicio al cliente y gestionar el control de inventario con herramientas de seguimiento digital.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="section card" aria-labelledby="educacion-title">
-        <h2 class="section-title" id="educacion-title">Educación</h2>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-head">
-              <strong>Automatización QA — Talento Tech</strong>
-              <span class="muted">Mar 2026 – Jul 2026</span>
-            </div>
-            <p class="muted">Automatización con Python, Selenium WebDriver y Pytest. POM, testing de APIs REST y BDD con Behave. Git, GitHub Actions y prácticas CI/CD.</p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-head">
-              <strong>Certificación en QA Manual y Automation — UTN</strong>
-              <span class="muted">Nov 2025 – Dic 2025</span>
-            </div>
-            <p class="muted">Beca otorgada por Fundación Empujar. Diseño y ejecución de pruebas manuales, reporte de bugs, testing funcional/exploratorio/regresión, e introducción a QA Automation con Cypress.</p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-head">
-              <strong>Programa de Empleabilidad y Habilidades Blandas — Fundación Empujar</strong>
-              <span class="muted">Ago 2025 – Dic 2025</span>
+            <div class="skills-group">
+              <h3 class="skills-group-title">Herramientas y colaboración</h3>
+              <ul class="skills-list">
+                <li class="skill-item">Git / GitHub</li>
+                <li class="skill-item">GitHub Actions</li>
+                <li class="skill-item">Jira</li>
+                <li class="skill-item">SQL</li>
+                <li class="skill-item">Scrum / Kanban</li>
+              </ul>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="lang-row">
-          <span class="skill-item">Inglés — Nivel B2</span>
-        </div>
-      </section>
+        <section class="section card" aria-labelledby="proyectos-title">
+          <h2 class="section-title" id="proyectos-title">Proyectos destacados</h2>
 
-      <aside class="section card" aria-labelledby="contacto-title">
-        <h2 class="section-title" id="contacto-title">Contacto</h2>
-        <ul class="contact-list">
-          <li><strong>Email:</strong> <a href="mailto:agustinar766@gmail.com">agustinar766@gmail.com</a></li>
-          <li><strong>Tel:</strong> <a href="tel:+5491123746070">+54 9 11 2374-6070</a></li>
-          <li><strong>Ubicación:</strong> Buenos Aires, Argentina</li>
-          <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/agustinarodriguezx/" target="_blank" rel="noopener noreferrer">linkedin.com/in/agustinarodriguezx</a></li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/Agusrodriguezx" target="_blank" rel="noopener noreferrer">github.com/Agusrodriguezx</a></li>
-        </ul>
-        <div class="contact-actions">
-          <a id="download-cv" class="link-button" href="AgustinaRodriguezCV.pdf" download>Descargar CV (PDF)</a>
-          <a class="link-button" href="mailto:agustinar766@gmail.com">Enviar email</a>
+          <article class="project-card">
+            <div class="project-head">
+              <h3>Bopp — QA Manual Testing Project</h3>
+              <span class="status-tag completed">✓ Completado</span>
+            </div>
+            <p class="project-tech">Jira · Gherkin · Testing exploratorio · Kanban</p>
+            <p>
+              Testing exploratorio sobre una aplicación móvil en fase beta. Documenté más de 6 tickets
+              en Jira con formato estructurado (contexto, criterios de aceptación, validación de QA y
+              evidencia), organizados en un flujo Kanban entre las épicas de Bugs y Mejoras. Los
+              criterios de aceptación los redacté en sintaxis Gherkin, con capturas de pantalla y
+              grabaciones como evidencia de cada incidencia.
+            </p>
+            <a class="link-button" href="https://github.com/Agusrodriguezx/Bopp-QA-Project" target="_blank" rel="noopener noreferrer">
+              Ver repositorio →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-head">
+              <h3>Framework de automatización — Swag Labs</h3>
+              <span class="status-tag completed">✓ Completado</span>
+            </div>
+            <p class="project-tech">Python · Selenium WebDriver · Pytest · Behave · GitHub Actions</p>
+            <p>
+              Framework de automatización con Page Object Model (POM) para cubrir login, inventario y
+              carrito de compras. Implementé Data-Driven Testing con datasets en CSV/JSON (casos
+              positivos y negativos), automaticé escenarios BDD con Gherkin y Behave, y sumé tests de
+              APIs REST con Requests. El pipeline de CI/CD en GitHub Actions corre la suite completa en
+              cada push y genera reportes HTML con capturas automáticas ante fallos.
+            </p>
+            <a class="link-button" href="https://github.com/Agusrodriguezx/swag-labs-test-automation" target="_blank" rel="noopener noreferrer">
+              Ver repositorio →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-head">
+              <h3>Cinema Ticket Booking</h3>
+              <span class="status-tag in-progress">⏱ En progreso</span>
+            </div>
+            <p class="project-tech">App de reserva de tickets para funciones de cine</p>
+            <p>
+              Aplicación para la reserva y compra de tickets de cine con interfaz intuitiva. Actualmente en desarrollo con funcionalidades de selección de asientos, gestión de funciones y procesamiento de pagos.
+            </p>
+          </article>
+        </section>
+
+        <section class="section card" aria-labelledby="experiencia-title">
+          <h2 class="section-title" id="experiencia-title">Experiencia</h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-head">
+                <strong>Asistente en evento de activación — Nintendo, Argentina Game Show 2025</strong>
+                <span class="muted">Oct 2025</span>
+              </div>
+              <ul>
+                <li>Guiar a los usuarios a través de demos interactivas, resolviendo consultas con atención al detalle.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-head">
+                <strong>Empleada de comercio minorista — Mercería y lencería "El Costurero"</strong>
+                <span class="muted">Ene 2022 – Abr 2025</span>
+              </div>
+              <ul>
+                <li>Brindar servicio al cliente y gestionar el control de inventario con herramientas de seguimiento digital.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section card" aria-labelledby="educacion-title">
+          <h2 class="section-title" id="educacion-title">Educación</h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-head">
+                <strong>Automatización QA — Talento Tech</strong>
+                <span class="muted">Mar 2026 – Jul 2026</span>
+              </div>
+              <p class="muted">Automatización con Python, Selenium WebDriver y Pytest. POM, testing de APIs REST y BDD con Behave. Git, GitHub Actions y prácticas CI/CD.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-head">
+                <strong>Certificación en QA Manual y Automation — UTN</strong>
+                <span class="muted">Nov 2025 – Dic 2025</span>
+              </div>
+              <p class="muted">Beca otorgada por Fundación Empujar. Diseño y ejecución de pruebas manuales, reporte de bugs, testing funcional/exploratorio/regresión, e introducción a QA Automatizada.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-head">
+                <strong>Programa de Empleabilidad y Habilidades Blandas — Fundación Empujar</strong>
+                <span class="muted">Ago 2025 – Dic 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lang-row">
+            <span class="skill-item">Inglés — Nivel B2</span>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar" id="sidebar-contact">
+        <div class="sidebar-card card" aria-labelledby="contacto-title">
+          <h2 class="section-title" id="contacto-title">Contacto</h2>
+          
+          <ul class="contact-list">
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:agustinar766@gmail.com">agustinar766@gmail.com</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+5491123746070">+54 9 11 2374-6070</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Buenos Aires, Argentina</span>
+            </li>
+          </ul>
+
+          <div class="social-section">
+            <h3 class="social-title">Conecta conmigo</h3>
+            <div class="social-links">
+              <a href="https://linkedin.com/in/agustinarodriguezx/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/Agusrodriguezx" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a id="download-cv" class="action-button" href="assets/AgustinaRodriguezCV.pdf" download>
+              <i class="fas fa-download"></i> Descargar CV
+            </a>
+            <a class="action-button" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=agustinar766@gmail.com" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-paper-plane"></i> Enviar email
+            </a>
+          </div>
         </div>
       </aside>
-    </main>
+    </div>
 
     <footer class="footer">
       <div class="container">© <span id="year"></span> Agustina Rodríguez — QA Tester</div>
