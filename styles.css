@@ -59,12 +59,19 @@ body{
     padding:0 1.5rem;
   }
 
+  .main-content{
+    padding-top:1.4rem;
+  }
+
   .sidebar{
     margin-top:1.4rem;
     position:sticky;
     top:24px;
   }
-
+   
+   .main-content > .section:first-child{
+    margin-top:0;
+  }
 }
 
 @media(max-width:899px){
