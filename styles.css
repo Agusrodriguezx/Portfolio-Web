@@ -60,7 +60,7 @@ body{
   }
 
   .sidebar{
-    margin-top:1.4rem;
+    margin-top:0;
     position:sticky;
     top:24px;
   }
@@ -179,7 +179,7 @@ body{
   box-shadow:0 0 0 3px rgba(47,107,79,0.12);
 }
 
-@media(min-width:700px){
+@media(min-width:900px){
   .header-inner{
     flex-direction:row;
     align-items:center;
