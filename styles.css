@@ -539,12 +539,10 @@ a:focus{outline:2px solid rgba(123,15,26,0.2);outline-offset:2px;border-radius:4
 /* --- i18n: header controls and language selector styles --- */
 
 .header-controls{
-  position:absolute;
-  top:1.4rem;
-  right:1rem;
-  display:inline-flex;
+  display:flex;
+  justify-content:flex-end;
   align-items:center;
-  gap:12px;
+  width:100%;
 }
 
 /* Language selector */
@@ -580,21 +578,3 @@ a:focus{outline:2px solid rgba(123,15,26,0.2);outline-offset:2px;border-radius:4
   outline: 2px solid rgba(123,15,26,0.18);
   outline-offset: 3px;
 }
-
-@media(max-width:899px){
-  .header-inner{
-    display:flex;
-  }
-
-  .header-controls{
-    order:2;
-    position:static;
-    width:100%;
-    display:flex;
-    justify-content:flex-end;
-    margin-top:-4px;
-  }
-
-  .header-brand{
-    order:1;
-  }
