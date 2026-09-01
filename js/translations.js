@@ -74,6 +74,8 @@
       "edu1.desc": "Automation with Python, Selenium WebDriver and Pytest. POM, REST API testing and BDD with Behave. Git, GitHub Actions and CI/CD practices.",
       "edu2.title": "QA Manual & Automation Testing Certification — UTN",
       "edu2.desc": "Scholarship by Fundación Empujar. Test design and execution, Bug Reports, functional/exploratory/regression testing and intro to automation.",
+      "edu2.title": "Employability & Soft Skills Program — Fundación Empujar",
+
 
       "contact.title": "Contact",
       "contact.location": "Buenos Aires, Argentina",
@@ -84,7 +86,7 @@
       "contact.download_cv": "Download Resume",
       "contact.send_email": "Send email",
 
-      "footer.copy": "© {year} — All rights reserved."
+      "footer.copy": "© {year} — Agustina Rodríguez — QA Tester."
     },
 
     es: {
@@ -157,6 +159,7 @@
       "edu1.desc": "Automatización con Python, Selenium WebDriver y Pytest. POM, testing de APIs REST y BDD con Behave. Git, GitHub Actions y prácticas CI/CD.",
       "edu2.title": "Certificación en QA Manual y Automation — UTN",
       "edu2.desc": "Beca otorgada por Fundación Empujar. Diseño y ejecución de pruebas manuales, reporte de bugs, testing funcional/exploratorio/regresión, e introducción a QA Automation.",
+      "edu2.title": "Programa de Empleabilidad y Habilidades Blandas — Fundación Empujar",
 
       "contact.title": "Contacto",
       "contact.location": "Buenos Aires, Argentina",
