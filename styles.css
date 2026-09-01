@@ -83,7 +83,12 @@ body{
 
   .main-content{
     width:100%;
+    max-width:none;
   }
+
+   .main-content .section{
+     width:100%;
+   }
 
   .sidebar{
     width:100%;
