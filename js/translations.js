@@ -68,6 +68,8 @@
       "exp1.resp": "Guided users through interactive demos, resolving queries with attention to detail.",
       "exp2.title": "Retail employee — \"El Costurero\" haberdashery",
       "exp2.resp": "Provided customer service and managed inventory control using digital tracking tools.",
+      "exp1.date": "Oct 2025",
+      "exp2.date": "Jan 2022 – Apr 2025",
 
       "education.title": "Education",
       "edu1.title": "QA Automation — Talento Tech",
@@ -75,6 +77,9 @@
       "edu2.title": "QA Manual & Automation Testing Certification — UTN",
       "edu2.desc": "Scholarship by Fundación Empujar. Test design and execution, Bug Reports, functional/exploratory/regression testing and intro to automation.",
       "edu3.title": "Employability & Soft Skills Program — Fundación Empujar",
+      "edu1.date": "Mar 2026 – Jul 2026",
+      "edu2.date": "Nov 2025 – Dec 2025",
+      "edu3.date": "Aug 2025 – Dec 2025",
 
 
       "contact.title": "Contact",
@@ -153,6 +158,8 @@
       "exp1.resp": "Guiar a los usuarios a través de demos interactivas, resolviendo consultas con atención al detalle.",
       "exp2.title": "Empleada de comercio minorista — Mercería y lencería \"El Costurero\"",
       "exp2.resp": "Brindar servicio al cliente y gestionar el control de inventario con herramientas de seguimiento digital.",
+      "exp1.date": "Oct 2025",
+      "exp2.date": "Ene 2022 – Abr 2025",
 
       "education.title": "Educación",
       "edu1.title": "Automatización QA — Talento Tech",
@@ -160,6 +167,9 @@
       "edu2.title": "Certificación en QA Manual y Automation — UTN",
       "edu2.desc": "Beca otorgada por Fundación Empujar. Diseño y ejecución de pruebas manuales, reporte de bugs, testing funcional/exploratorio/regresión, e introducción a QA Automation.",
       "edu3.title": "Programa de Empleabilidad y Habilidades Blandas — Fundación Empujar",
+      "edu1.date": "Mar 2026 – Jul 2026",
+      "edu2.date": "Nov 2025 – Dic 2025",
+      "edu3.date": "Ago 2025 – Dic 2025",
 
       "contact.title": "Contacto",
       "contact.location": "Buenos Aires, Argentina",
