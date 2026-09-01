@@ -539,10 +539,21 @@ a:focus{outline:2px solid rgba(123,15,26,0.2);outline-offset:2px;border-radius:4
 /* --- i18n: header controls and language selector styles --- */
 
 .header-controls{
-  display:flex;
-  justify-content:flex-end;
+  position:absolute;
+  top:1.4rem;
+  right:1rem;
+  display:inline-flex;
   align-items:center;
-  width:100%;
+  gap:12px;
+}
+
+@media(max-width:899px){
+  .header-controls{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    gap:10px;
+  }
 }
 
 /* Language selector */
