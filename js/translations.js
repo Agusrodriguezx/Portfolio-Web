@@ -92,7 +92,7 @@
     es: {
       "hero.title": "QA Engineer | Manual & Automation Testing",
 
-      "header.role": "QA Tester — Manual & Automatizada",
+      "header.role": "QA Tester — Manual & Automatizado",
       "header.status": "Disponible para nuevas oportunidades",
 
       "summary.title": "Resumen",
