@@ -162,31 +162,6 @@ body{
   font-weight:500;
 }
 
-.status-stamp{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  align-self:flex-start;
-  font-family:var(--mono);
-  font-size:0.72rem;
-  font-weight:600;
-  letter-spacing:0.03em;
-  text-transform:uppercase;
-  color:var(--pass);
-  background:#eef5f1;
-  border:1px solid #d7e8de;
-  padding:6px 10px;
-  border-radius:999px;
-}
-
-.status-dot{
-  width:7px;
-  height:7px;
-  border-radius:50%;
-  background:var(--pass);
-  box-shadow:0 0 0 3px rgba(47,107,79,0.12);
-}
-
 @media(min-width:900px){
   .header-inner{
     flex-direction:row;
@@ -628,8 +603,3 @@ a:focus{outline:2px solid rgba(123,15,26,0.2);outline-offset:2px;border-radius:4
   .header-brand{
     order:1;
   }
-
-  .status-stamp{
-    order:3;
-  }
-}
