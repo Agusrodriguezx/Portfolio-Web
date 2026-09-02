@@ -544,6 +544,12 @@ a:focus{outline:2px solid rgba(123,15,26,0.2);outline-offset:2px;border-radius:4
   .skills-group{flex:1}
 }
 
+@media(min-width:900px){
+  .header .container{
+    padding-left:3rem;
+  }
+}
+
 /* --- i18n: header controls and language selector styles --- */
 
 .header-controls{
@@ -593,10 +599,14 @@ a:focus{outline:2px solid rgba(123,15,26,0.2);outline-offset:2px;border-radius:4
 
 /* Active language */
 .lang-btn[aria-pressed="true"] {
-  background: var(--accent);
-  color: #fff;
-  border-color: var(--accent);
-  text-decoration: none;
+  background: transparent;
+  color: var(--accent);
+  border-color: transparent;
+  font-weight: 700;
+}
+
+.lang-btn:hover {
+  color: var(--accent-ink);
 }
 
 .lang-btn:focus {
