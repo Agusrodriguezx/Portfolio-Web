@@ -97,7 +97,7 @@
     es: {
       "hero.title": "QA Engineer | Manual & Automation Testing",
 
-      "header.role": "QA Tester — Manual & Automatizado",
+      "header.role": "QA Tester | Manual & Automatizado",
       "header.status": "Disponible para nuevas oportunidades",
 
       "summary.title": "Resumen",
@@ -148,7 +148,7 @@
       "project2.metric5": "✓ CI/CD con GitHub Actions",
       "project2.metric6": "✓ Reportes HTML con capturas de fallos",
 
-      "project3.title": "Cinema Ticket Booking",
+      "project3.title": "Cineplus App",
       "project.status.inprogress": "⏱ En progreso",
       "project3.tech": "App de reserva de tickets para funciones de cine",
       "project3.p1": "Aplicación para la reserva y compra de tickets de cine con interfaz intuitiva. Actualmente en desarrollo con funcionalidades de selección de asientos, gestión de funciones y compra.",
