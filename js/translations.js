@@ -58,11 +58,14 @@
       "project2.metric5": "✓ CI/CD with GitHub Actions",
       "project2.metric6": "✓ HTML reports with failure screenshots",
 
-      "project3.title": "Cinema Ticket Booking",
+      "project3.title": "CinemaPlus App",
       "project.status.inprogress": "⏱ In progress",
       "project3.tech": "Ticket booking app for cinema shows",
       "project3.p1": "Application for reserving and purchasing cinema tickets with an intuitive UI. Currently in development with seat selection, show management and purchase flow.",
 
+      "projects.repo": "View repository →",
+      "projects.view": "View application →",
+       
       "experience.title": "Experience",
       "exp1.title": "Event activation assistant — Nintendo, Argentina Game Show 2025",
       "exp1.resp": "Guided users through interactive demos, resolving queries with attention to detail.",
@@ -153,6 +156,9 @@
       "project3.tech": "App de reserva de tickets para funciones de cine",
       "project3.p1": "Aplicación para la reserva y compra de tickets de cine con interfaz intuitiva. Actualmente en desarrollo con funcionalidades de selección de asientos, gestión de funciones y compra.",
 
+      "projects.repo": "Ver repositorio →",
+      "projects.view": "Ver aplicación →",
+       
       "experience.title": "Experiencia",
       "exp1.title": "Asistente en evento de activación — Nintendo, Argentina Game Show 2025",
       "exp1.resp": "Guiar a los usuarios a través de demos interactivas, resolviendo consultas con atención al detalle.",
