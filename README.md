@@ -1,4 +1,4 @@
-# Portfolio-Web (versión estática)
+# Portfolio-Web | Agustina Rodriguez
 
 Esta es la versión estática del portfolio de Agustina Rodriguez (HTML, CSS y JavaScript puro). Ideal para desplegar como sitio estático en Vercel, Netlify o GitHub Pages.
 
