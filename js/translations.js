@@ -221,6 +221,15 @@
       } else {
         el.textContent = text;
       }
+      const cvButton = document.getElementById("cv-download");
+
+      if (cvButton) {
+        if (lang === "en") {
+          cvButton.href = "assets/CVs/Agustina-Rodriguez-EN.pdf";
+        } else {
+          cvButton.href = "assets/CVs/Agustina-Rodriguez-ES.pdf";
+        }
+      }
     });
 
     saveLang(lang);
