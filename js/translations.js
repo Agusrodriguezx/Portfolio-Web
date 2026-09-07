@@ -225,9 +225,11 @@
 
       if (cvButton) {
         if (lang === "en") {
-          cvButton.href = "assets/CVs/Agustina-Rodriguez-EN.pdf";
+          cvButton.href = 
+             "https://raw.githubusercontent.com/Agusrodriguezx/Portfolio-Web/main/assets/CVs/Agustina-Rodriguez-EN.pdf";
         } else {
-          cvButton.href = "assets/CVs/Agustina-Rodriguez-ES.pdf";
+          cvButton.href = 
+             "https://raw.githubusercontent.com/Agusrodriguezx/Portfolio-Web/main/assets/CVs/Agustina-Rodriguez-ES.pdf";
         }
       }
     });
