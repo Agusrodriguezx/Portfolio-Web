@@ -53,7 +53,7 @@ body{
 
   .layout-wrapper{
     display:grid;
-    grid-template-columns:minmax(0, 1fr) 280px;
+    grid-template-columns:minmax(0, 1fr) 300px;
     gap:24px;
     align-items:start;
     padding:0 1.5rem;
@@ -405,7 +405,8 @@ body{
 /* Contact & lists */
 .contact-list{list-style:none;padding:0;margin:0}
 .contact-list li{padding:8px 0;display:flex;align-items:center;gap:8px;min-width:0}
-.contact-list a{color:var(--accent);text-decoration:none;overflow-wrap:break-word;word-break:break-word;min-width:0}
+.contact-list a{color:var(--accent);text-decoration:none;white-space:nowrap}
+.contact-list li > span{white-space:nowrap}
 .contact-list a:focus, .contact-list a:hover{text-decoration:underline}
 .contact-actions{
   display:flex;
