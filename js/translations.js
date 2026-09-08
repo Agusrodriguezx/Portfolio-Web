@@ -7,13 +7,13 @@
     en: {
       "meta.title": "Agustina Rodríguez — QA Tester",
       "meta.description": "Agustina Rodríguez's Portfolio — Manual & Automation QA Tester. Exploratory, functional testing and automation with Python and Selenium.",
+       
       "hero.title": "QA Engineer | Manual & Automation Testing",
 
-      "header.role": "QA Tester | Manual & Automation",
-      "header.status": "Available for new opportunities",
+      "header.role": "QA Tester Jr. | Manual & Automation",
 
       "summary.title": "Summary",
-      "summary.p1": "I am a QA Engineer with training in manual and automated testing for web applications. I combine exploratory and functional testing with automation using Python, Selenium and Pytest, and I am comfortable both documenting Bug Reports in Jira and building test frameworks integrated into CI/CD pipelines. I come from three years in customer service, so clear communication and attention to detail are natural parts of how I work.",
+      "summary.p1": "I am a QA Engineer with training in manual and automated testing for web applications. I combine exploratory and functional testing with automation using Python, Selenium and Pytest, and I am comfortable both documenting Bug Reports in Jira and building test frameworks integrated into CI/CD pipelines. I come from three years in customer service, so clear communication and attention to detail are natural parts of how I work. I'm used to working remotely with distributed teams.",
 
       "skills.automation_title": "Automation & testing",
       "skill.python": "Python",
@@ -106,11 +106,10 @@
       "meta.description": "Portfolio de Agustina Rodríguez — QA Tester Manual y Automatizada. Testing exploratorio, funcional y automatización con Python y Selenium.",
       "hero.title": "QA Engineer | Manual & Automation Testing",
 
-      "header.role": "QA Tester | Manual & Automatizado",
-      "header.status": "Disponible para nuevas oportunidades",
+      "header.role": "QA Tester Jr. | Manual & Automatizado",
 
       "summary.title": "Resumen",
-      "summary.p1": "Soy QA Tester con formación en testing manual y automatizado de aplicaciones web. Combino pruebas exploratorias y funcionales con automatización en Python, Selenium y Pytest, y trabajo cómoda tanto documentando Bug Reports en Jira como armando frameworks de testing con integración continua. Vengo de tres años en atención al cliente, así que la comunicación clara y la atención al detalle son parte natural de cómo trabajo.",
+      "summary.p1": "Soy QA Tester con formación en testing manual y automatizado de aplicaciones web. Combino pruebas exploratorias y funcionales con automatización en Python, Selenium y Pytest, y trabajo cómoda tanto documentando Bug Reports en Jira como armando frameworks de testing con integración continua. Vengo de tres años en atención al cliente, así que la comunicación clara y la atención al detalle son parte natural de cómo trabajo. Estoy acostumbrada a trabajar de forma remota con equipos distribuidos."",
 
       "skills.automation_title": "Automatización y testing",
       "skill.python": "Python",
