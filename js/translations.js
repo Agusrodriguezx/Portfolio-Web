@@ -40,7 +40,7 @@
       "project1.title": "Bopp — QA Manual Testing Project",
       "project.status.completed": "✓ Completed",
       "project1.tech": "Jira · Gherkin · Exploratory testing · Kanban",
-      "project1.context": "Personal project",
+      "project1.context": "Personal project focused on practicing QA processes and tools.",
       "project1.p1": "Exploratory testing on a beta mobile app. I documented 6 structured Jira tickets (context, Acceptance Criteria, QA validation and evidence), organized within a Kanban workflow across Bugs and Improvements. Acceptance Criteria were written in Gherkin syntax with screenshots and recordings as evidence.",
       "project1.metric1": "✓ 6 documented tickets",
       "project1.metric2": "✓ 4 bugs reported",
@@ -51,6 +51,7 @@
 
       "project2.title": "Automation framework — Swag Labs",
       "project2.tech": "Python · Selenium WebDriver · Pytest · Behave · GitHub Actions",
+      "project2.context": "Hands-on project developed during my QA Automation training at Talento Tech.",
       "project2.p1": "Automation framework using Page Object Model (POM) to cover login, inventory and cart. Implemented Data-Driven Testing with CSV/JSON datasets, automated BDD scenarios with Gherkin and Behave, and integrated REST API testing. The CI/CD pipeline in GitHub Actions runs the full suite on every push and generates HTML reports with automatic screenshots on failures.",
       "project2.metric1": "✓ 17 automated scenarios",
       "project2.metric2": "✓ 3 functional modules covered",
