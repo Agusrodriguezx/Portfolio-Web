@@ -149,7 +149,7 @@
 
       "project2.title": "Framework de automatización — Swag Labs",
       "project2.tech": "Python · Selenium WebDriver · Pytest · Behave · GitHub Actions",
-      "project2.context": "Proyecto práctico desarrollado durante mi formación en QA Automation con Talento Tech",
+      "project2.context": "Proyecto práctico desarrollado durante mi formación en QA Automation con Talento Tech.",
       "project2.p1": "Framework de automatización con Page Object Model (POM) para cubrir login, inventario y carrito de compras. Implementé Data-Driven Testing con datasets en CSV/JSON, automatizé escenarios BDD con Gherkin y Behave, e integré testing de APIs REST. El pipeline de CI/CD en GitHub Actions corre la suite completa en cada push y genera reportes HTML con capturas automáticas ante fallos.",
       "project2.metric1": "✓ 17 escenarios automatizados",
       "project2.metric2": "✓ 3 módulos funcionales cubiertos",
