@@ -109,7 +109,7 @@
       "header.role": "QA Tester Jr. | Manual & Automatizado",
 
       "summary.title": "Resumen",
-      "summary.p1": "Soy QA Tester con formación en testing manual y automatizado de aplicaciones web. Combino pruebas exploratorias y funcionales con automatización en Python, Selenium y Pytest, y trabajo cómoda tanto documentando Bug Reports en Jira como armando frameworks de testing con integración continua. Vengo de tres años en atención al cliente, así que la comunicación clara y la atención al detalle son parte natural de cómo trabajo. Estoy acostumbrada a trabajar de forma remota con equipos distribuidos."",
+      "summary.p1": "Soy QA Tester con formación en testing manual y automatizado de aplicaciones web. Combino pruebas exploratorias y funcionales con automatización en Python, Selenium y Pytest, y trabajo cómoda tanto documentando Bug Reports en Jira como armando frameworks de testing con integración continua. Vengo de tres años en atención al cliente, así que la comunicación clara y la atención al detalle son parte natural de cómo trabajo. Estoy acostumbrada a trabajar de forma remota con equipos distribuidos.",
 
       "skills.automation_title": "Automatización y testing",
       "skill.python": "Python",
