@@ -40,6 +40,7 @@
       "project1.title": "Bopp — QA Manual Testing Project",
       "project.status.completed": "✓ Completed",
       "project1.tech": "Jira · Gherkin · Exploratory testing · Kanban",
+      "project1.context": "Personal project",
       "project1.p1": "Exploratory testing on a beta mobile app. I documented 6 structured Jira tickets (context, Acceptance Criteria, QA validation and evidence), organized within a Kanban workflow across Bugs and Improvements. Acceptance Criteria were written in Gherkin syntax with screenshots and recordings as evidence.",
       "project1.metric1": "✓ 6 documented tickets",
       "project1.metric2": "✓ 4 bugs reported",
