@@ -5,6 +5,8 @@
 (function () {
   const translations = {
     en: {
+      "meta.title": "Agustina Rodríguez — QA Tester",
+      "meta.description": "Agustina Rodríguez's Portfolio — Manual & Automation QA Tester. Exploratory, functional testing and automation with Python and Selenium.",
       "hero.title": "QA Engineer | Manual & Automation Testing",
 
       "header.role": "QA Tester | Manual & Automation",
@@ -100,6 +102,8 @@
     },
 
     es: {
+      "meta.title": "Agustina Rodríguez — QA Tester",
+      "meta.description": "Portfolio de Agustina Rodríguez — QA Tester Manual y Automatizada. Testing exploratorio, funcional y automatización con Python y Selenium.",
       "hero.title": "QA Engineer | Manual & Automation Testing",
 
       "header.role": "QA Tester | Manual & Automatizado",
