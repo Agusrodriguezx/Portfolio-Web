@@ -72,9 +72,14 @@
        
       "experience.title": "Experience",
       "exp1.title": "Event activation assistant — Nintendo, Argentina Game Show 2025",
-      "exp1.resp": "Guided users through interactive demos, resolving queries with attention to detail.",
+      "exp1.resp": "Assisted visitors during the Nintendo Switch 2 presentation in Argentina (Argentina Game Show 2025).",
+      "exp1.resp2": "Explained controller usage and guided attendees through interactive demos.",
+      "exp1.resp3": "Observed players' experience during the demos and resolved their questions in real time.",
+      "exp1.resp4": "Strengthened communication, attention to detail and user-orientation skills in a high-traffic public event.",
       "exp2.title": "Retail employee — \"El Costurero\" haberdashery",
-      "exp2.resp": "Provided customer service and managed inventory control using digital tracking tools.",
+      "exp2.resp": "Provided customer service and managed stock control using digital tracking tools.",
+      "exp2.resp2": "Reviewed and updated prices, and organized the sales floor and daily store tasks.",
+      "exp2.resp3": "Used Excel to track stock and update prices.",
       "exp1.date": "Oct 2025",
       "exp2.date": "Jan 2022 – Apr 2025",
 
@@ -168,9 +173,14 @@
        
       "experience.title": "Experiencia",
       "exp1.title": "Asistente en evento de activación — Nintendo, Argentina Game Show 2025",
-      "exp1.resp": "Guiar a los usuarios a través de demos interactivas, resolviendo consultas con atención al detalle.",
+      "exp1.resp": "Brindar asistencia a usuarios durante la presentación de la Nintendo Switch 2 en Argentina (Argentina Game Show 2025).",
+      "exp1.resp2": "Explicar el uso de los mandos y guiar a los asistentes en demos interactivas.",
+      "exp1.resp3": "Observar la experiencia de los jugadores durante las demos y resolver sus consultas en tiempo real.",
+      "exp1.resp4": "Reforzar habilidades de comunicación, atención al detalle y orientación al usuario en un evento de alto volumen de público.",
       "exp2.title": "Empleada de comercio minorista — Mercería y lencería \"El Costurero\"",
-      "exp2.resp": "Brindar servicio al cliente y gestionar el control de inventario con herramientas de seguimiento digital.",
+      "exp2.resp": "Brindar atención al cliente y gestionar el control de stock con herramientas de seguimiento digital.",
+      "exp2.resp2": "Revisar y actualizar precios, y organizar el espacio de venta junto con las tareas diarias del local.",
+      "exp2.resp3": "Utilizar Excel para el seguimiento de stock y la actualización de precios.",
       "exp1.date": "Oct 2025",
       "exp2.date": "Ene 2022 – Abr 2025",
 
