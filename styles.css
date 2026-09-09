@@ -327,6 +327,7 @@ body{
   overflow:hidden;
   border:1px solid var(--border);
   background:#fff;
+  touch-action:pan-y;
 }
 
 .carousel-image{
@@ -378,6 +379,13 @@ body{
   height:8px;
   border-radius:50%;
   background:#ccc;
+  cursor:pointer;
+  border:none;
+  padding:0;
+}
+
+.dot:hover{
+  background:var(--muted);
 }
 
 .dot.active{
