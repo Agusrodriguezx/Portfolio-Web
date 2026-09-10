@@ -7,6 +7,11 @@
     en: {
       "meta.title": "Agustina Rodríguez — QA Tester",
       "meta.description": "Agustina Rodríguez's Portfolio — Manual & Automation QA Tester. Exploratory, functional testing and automation with Python and Selenium.",
+
+      "nav.summary": "Summary",
+      "nav.projects": "Projects",
+      "nav.timeline": "Experience",
+      "nav.contact": "Contact",
        
       "hero.greeting": "Hi, I'm Agustina Rodríguez",
       "hero.title": "QA Tester Jr. | Manual & Automation Testing",
@@ -121,6 +126,12 @@
     es: {
       "meta.title": "Agustina Rodríguez — QA Tester",
       "meta.description": "Portfolio de Agustina Rodríguez — QA Tester Manual y Automatizada. Testing exploratorio, funcional y automatización con Python y Selenium.",
+
+      "nav.summary": "Resumen",
+      "nav.projects": "Proyectos",
+      "nav.timeline": "Trayectoria",
+      "nav.contact": "Contacto",
+
       "hero.greeting": "Hola, soy Agustina Rodríguez",
       "hero.title": "QA Tester Jr. | Manual & Automatizado",
       "hero.value": "Aseguro la calidad de aplicaciones web combinando testing manual y automatizado con Python, Selenium y Pytest — con atención al detalle y comunicación clara.",
