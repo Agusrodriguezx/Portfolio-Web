@@ -8,7 +8,9 @@
       "meta.title": "Agustina Rodríguez — QA Tester",
       "meta.description": "Agustina Rodríguez's Portfolio — Manual & Automation QA Tester. Exploratory, functional testing and automation with Python and Selenium.",
        
-      "hero.title": "QA Engineer | Manual & Automation Testing",
+      "hero.greeting": "Hi, I'm Agustina Rodríguez",
+      "hero.title": "QA Tester Jr. | Manual & Automation Testing",
+      "hero.value": "I ensure web application quality by combining manual and automated testing with Python, Selenium and Pytest — with strong attention to detail and clear communication.",
 
       "header.role": "QA Tester Jr. | Manual & Automation",
 
@@ -42,7 +44,7 @@
       "project1.title": "Bopp — QA Manual Testing Project",
       "project.status.completed": "✓ Completed",
       "project1.tech": "Jira · Gherkin · Exploratory testing · Kanban",
-      "project1.context": "Personal project, self-initiated to gain hands-on practice.",
+      "project1.context": "Personal project, self-initiated (no course or client involved) to gain hands-on practice.",
       "project1.p1": "Exploratory testing on a beta mobile app. I documented 6 structured Jira tickets (context, Acceptance Criteria, QA validation and evidence), organized within a Kanban workflow across Bugs and Improvements. Acceptance Criteria were written in Gherkin syntax with screenshots and recordings as evidence.",
       "project1.metric1": "✓ 6 documented tickets",
       "project1.metric2": "✓ 4 bugs reported",
@@ -89,6 +91,7 @@
       "edu2.title": "QA Manual & Automation Testing Certification — UTN",
       "edu2.desc": "Scholarship by Fundación Empujar. Test design and execution, Bug Reports, functional/exploratory/regression testing and intro to automation.",
       "edu3.title": "Employability & Soft Skills Program — Fundación Empujar",
+      "edu3.desc": "Training in job-readiness tools: development of professional competencies, socio-emotional skills, self-awareness and employability. Strengthened communication, proactivity, teamwork, autonomy and leadership.",
       "edu1.date": "Mar 2026 – Jul 2026",
       "edu2.date": "Nov 2025 – Dec 2025",
       "edu3.date": "Aug 2025 – Dec 2025",
@@ -109,7 +112,9 @@
     es: {
       "meta.title": "Agustina Rodríguez — QA Tester",
       "meta.description": "Portfolio de Agustina Rodríguez — QA Tester Manual y Automatizada. Testing exploratorio, funcional y automatización con Python y Selenium.",
-      "hero.title": "QA Engineer | Manual & Automation Testing",
+      "hero.greeting": "Hola, soy Agustina Rodríguez",
+      "hero.title": "QA Tester Jr. | Manual & Automatizado",
+      "hero.value": "Aseguro la calidad de aplicaciones web combinando testing manual y automatizado con Python, Selenium y Pytest — con atención al detalle y comunicación clara.",
 
       "header.role": "QA Tester Jr. | Manual & Automatizado",
 
@@ -143,7 +148,7 @@
       "project1.title": "Bopp — QA Manual Testing Project",
       "project.status.completed": "✓ Completado",
       "project1.tech": "Jira · Gherkin · Testing exploratorio · Kanban",
-      "project1.context": "Proyecto personal, realizado por iniciativa propia para sumar experiencia práctica.",
+      "project1.context": "Proyecto personal, realizado por iniciativa propia (sin curso ni cliente de por medio) para sumar experiencia práctica.",
       "project1.p1": "Testing exploratorio sobre una aplicación móvil en fase beta. Documenté 6 tickets estructurados en Jira (contexto, Acceptance Criteria, validación de QA y evidencia), organizados dentro de un flujo Kanban entre Bugs y Mejoras. Los criterios de aceptación los redacté en sintaxis Gherkin, con capturas de pantalla y grabaciones como evidencia de cada incidencia.",
       "project1.metric1": "✓ 6 tickets documentados",
       "project1.metric2": "✓ 4 bugs reportados",
@@ -190,6 +195,7 @@
       "edu2.title": "Certificación en QA Manual y Automation — UTN",
       "edu2.desc": "Beca otorgada por Fundación Empujar. Diseño y ejecución de pruebas manuales, reporte de bugs, testing funcional/exploratorio/regresión, e introducción a QA Automation.",
       "edu3.title": "Programa de Empleabilidad y Habilidades Blandas — Fundación Empujar",
+      "edu3.desc": "Capacitación en herramientas para la inserción laboral: desarrollo de competencias laborales, habilidades socioemocionales, autoconocimiento y empleabilidad. Fortalecimiento de comunicación, proactividad, trabajo en equipo, autonomía y liderazgo.",
       "edu1.date": "Mar 2026 – Jul 2026",
       "edu2.date": "Nov 2025 – Dic 2025",
       "edu3.date": "Ago 2025 – Dic 2025",
