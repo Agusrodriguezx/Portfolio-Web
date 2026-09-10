@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <!-- Font Awesome para íconos -->
@@ -126,7 +126,23 @@
               <h3 data-i18n="project1.title">Bopp — QA Manual Testing Project</h3>
               <span class="status-tag completed" data-i18n="project.status.completed">✓ Completado</span>
             </div>
-            <p class="project-tech" data-i18n="project1.tech">Jira · Gherkin · Testing exploratorio · Kanban</p>
+
+            <div class="project-metrics">
+              <span data-i18n="project1.metric1">✓ 6 tickets documentados</span>
+              <span data-i18n="project1.metric2">✓ 4 bugs reportados</span>
+              <span data-i18n="project1.metric3">✓ 2 historias de usuario</span>
+              <span data-i18n="project1.metric4">✓ Gherkin como criterio de aceptación</span>
+              <span data-i18n="project1.metric5">✓ Evidencia visual adjunta</span>
+              <span data-i18n="project1.metric6">✓ Flujo Kanban completo</span>
+            </div>
+
+            <ul class="stack-tags">
+              <li data-i18n="project1.tech1">Jira</li>
+              <li data-i18n="project1.tech2">Gherkin</li>
+              <li data-i18n="project1.tech3">Testing exploratorio</li>
+              <li data-i18n="project1.tech4">Kanban</li>
+            </ul>
+
             <p class="muted" data-i18n="project1.context">Proyecto personal orientado a la práctica de procesos y herramientas de QA.</p>
             <p data-i18n="project1.p1">
               Testing exploratorio sobre una aplicación móvil en fase beta. Documenté más de 6 tickets
@@ -135,15 +151,7 @@
               criterios de aceptación los redacté en sintaxis Gherkin, con capturas de pantalla y
               grabaciones como evidencia de cada incidencia.
             </p>
-              <div class="project-metrics">
-                <span data-i18n="project1.metric1">✓ 6 tickets documentados</span>
-                <span data-i18n="project1.metric2">✓ 4 bugs reportados</span>
-                <span data-i18n="project1.metric3">✓ 2 historias de usuario</span>
-                <span data-i18n="project1.metric4">✓ Gherkin como criterio de aceptación</span>
-                <span data-i18n="project1.metric5">✓ Evidencia visual adjunta</span>
-                <span data-i18n="project1.metric6">✓ Flujo Kanban completo</span>
-              </div>
-            
+
             <div class="carousel">
               <img src="assets/projects/bopp-board.png" class="carousel-image active" alt="Tablero Kanban de Jira">
   
@@ -160,7 +168,13 @@
                 <button type="button" class="dot" aria-label="Ver imagen 3"></button>
               </div>
             </div>
-            <a class="link-button" href="https://github.com/Agusrodriguezx/Bopp-QA-Project" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Ver repositorio →</a>
+
+            <div class="project-cta">
+              <a class="btn btn-primary" href="https://github.com/Agusrodriguezx/Bopp-QA-Project" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Ver repositorio →</a>
+              <!-- Activar cuando exista el archivo de reporte:
+              <a class="btn btn-secondary" href="RUTA_AL_REPORTE.pdf" target="_blank" rel="noopener noreferrer" data-i18n="projects.report">Ver Reporte de Pruebas</a>
+              -->
+            </div>
           </article>
 
           <article class="project-card">
@@ -168,16 +182,7 @@
               <h3 data-i18n="project2.title">Framework de automatización — Swag Labs</h3>
               <span class="status-tag completed" data-i18n="project.status.completed">✓ Completado</span>
             </div>
-            <p class="project-tech" data-i18n="project2.tech">Python · Selenium WebDriver · Pytest · Behave · GitHub Actions</p>
-             <p class="muted" data-i18n="project2.context">Proyecto práctico desarrollado durante mi formación en QA Automation con Talento Tech.</p>
-            <p data-i18n="project2.p1">
-              Framework de automatización con Page Object Model (POM) para cubrir login, inventario y
-              carrito de compras. Implementé Data-Driven Testing con datasets en CSV/JSON (casos
-              positivos y negativos), automaticé escenarios BDD con Gherkin y Behave, y sumé tests de
-              APIs REST con Requests. El pipeline de CI/CD en GitHub Actions corre la suite completa en
-              cada push y genera reportes HTML con capturas automáticas ante fallos.
-            </p>
-            
+
             <div class="project-metrics">
               <span data-i18n="project2.metric1">✓ 17 escenarios automatizados</span>
               <span data-i18n="project2.metric2">✓ Login, Inventario y Carrito</span>
@@ -186,7 +191,24 @@
               <span data-i18n="project2.metric5">✓ CI/CD con GitHub Actions</span>
               <span data-i18n="project2.metric6">✓ Reporte HTML con evidencias</span>
             </div>
-            
+
+            <ul class="stack-tags">
+              <li data-i18n="project2.tech1">Python</li>
+              <li data-i18n="project2.tech2">Selenium WebDriver</li>
+              <li data-i18n="project2.tech3">Pytest</li>
+              <li data-i18n="project2.tech4">Behave</li>
+              <li data-i18n="project2.tech5">GitHub Actions</li>
+            </ul>
+
+             <p class="muted" data-i18n="project2.context">Proyecto práctico desarrollado durante mi formación en QA Automation con Talento Tech.</p>
+            <p data-i18n="project2.p1">
+              Framework de automatización con Page Object Model (POM) para cubrir login, inventario y
+              carrito de compras. Implementé Data-Driven Testing con datasets en CSV/JSON (casos
+              positivos y negativos), automaticé escenarios BDD con Gherkin y Behave, y sumé tests de
+              APIs REST con Requests. El pipeline de CI/CD en GitHub Actions corre la suite completa en
+              cada push y genera reportes HTML con capturas automáticas ante fallos.
+            </p>
+
             <div class="carousel">
               <img src="assets/projects/swag-htmlreport.png" class="carousel-image active" alt="README del proyecto">
   
@@ -203,7 +225,13 @@
                 <button type="button" class="dot" aria-label="Ver imagen 3"></button>
               </div>
             </div>
-            <a class="link-button" href="https://github.com/Agusrodriguezx/swag-labs-test-automation" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Ver repositorio →</a>
+
+            <div class="project-cta">
+              <a class="btn btn-primary" href="https://github.com/Agusrodriguezx/swag-labs-test-automation" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Ver repositorio →</a>
+              <!-- Activar cuando exista el archivo de reporte:
+              <a class="btn btn-secondary" href="RUTA_AL_REPORTE.pdf" target="_blank" rel="noopener noreferrer" data-i18n="projects.report">Ver Reporte de Pruebas</a>
+              -->
+            </div>
           </article>
 
           <article class="project-card">
@@ -215,22 +243,50 @@
             <p data-i18n="project3.p1">
               Aplicación para la reserva y compra de tickets de cine con interfaz intuitiva. Actualmente en desarrollo con funcionalidades de selección de asientos, gestión de funciones y compra.
             </p>
-            <div class="project-links" style="display: flex; gap: 12px; flex-wrap: wrap;">
-              <a class="link-button" href="https://cineplus-app-two.vercel.app/" target="_blank" rel="noopener noreferrer" data-i18n="projects.view">Ver aplicación →</a>
-              <a class="link-button" href="https://github.com/Agusrodriguezx/Cinema-Ticket-Booking-App" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Ver repositorio →</a>
+            <div class="project-cta">
+              <a class="btn btn-primary" href="https://cineplus-app-two.vercel.app/" target="_blank" rel="noopener noreferrer" data-i18n="projects.view">Ver aplicación →</a>
+              <a class="btn btn-secondary" href="https://github.com/Agusrodriguezx/Cinema-Ticket-Booking-App" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Ver repositorio →</a>
             </div>
           </article>
         </section>
 
-        <section class="section card" aria-labelledby="experiencia-title">
-          <h2 class="section-title" id="experiencia-title" data-i18n="experience.title">Experiencia</h2>
+        <section class="section card" aria-labelledby="trayectoria-title">
+          <h2 class="section-title" id="trayectoria-title" data-i18n="timeline.title">Experiencia y Educación</h2>
 
           <div class="timeline">
             <div class="timeline-item">
               <div class="timeline-head">
-                <strong data-i18n="exp1.title">Asistente en evento de activación — Nintendo, Argentina Game Show 2025</strong>
+                <span class="timeline-type edu" data-i18n="timeline.type.edu">Educación</span>
+                <span class="muted" data-i18n="edu1.date">Mar 2026 – Jul 2026</span>
+              </div>
+              <strong data-i18n="edu1.title">Automatización QA — Talento Tech</strong>
+              <p class="muted" data-i18n="edu1.desc">Automatización con Python, Selenium WebDriver y Pytest. POM, testing de APIs REST y BDD con Behave. Git, GitHub Actions y prácticas CI/CD.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-head">
+                <span class="timeline-type edu" data-i18n="timeline.type.edu">Educación</span>
+                <span class="muted" data-i18n="edu2.date">Nov 2025 – Dic 2025</span>
+              </div>
+              <strong data-i18n="edu2.title">Certificación en QA Manual y Automation — UTN</strong>
+              <p class="muted" data-i18n="edu2.desc">Beca otorgada por Fundación Empujar. Diseño y ejecución de pruebas manuales, reporte de bugs, testing funcional/exploratorio/regresión, e introducción a QA Automation.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-head">
+                <span class="timeline-type edu" data-i18n="timeline.type.edu">Educación</span>
+                <span class="muted" data-i18n="edu3.date">Ago 2025 – Dic 2025</span>
+              </div>
+              <strong data-i18n="edu3.title">Programa de Empleabilidad y Habilidades Blandas — Fundación Empujar</strong>
+              <p class="muted" data-i18n="edu3.desc">Capacitación en herramientas para la inserción laboral: desarrollo de competencias laborales, habilidades socioemocionales, autoconocimiento y empleabilidad. Fortalecimiento de comunicación, proactividad, trabajo en equipo, autonomía y liderazgo.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-head">
+                <span class="timeline-type exp" data-i18n="timeline.type.exp">Experiencia</span>
                 <span class="muted" data-i18n="exp1.date">Oct 2025</span>
               </div>
+              <strong data-i18n="exp1.title">Asistente en evento de activación — Nintendo, Argentina Game Show 2025</strong>
               <ul>
                 <li data-i18n="exp1.resp">Brindar asistencia a usuarios durante la presentación de la Nintendo Switch 2 en Argentina (Argentina Game Show 2025).</li>
                 <li data-i18n="exp1.resp2">Explicar el uso de los mandos y guiar a los asistentes en demos interactivas.</li>
@@ -241,44 +297,15 @@
 
             <div class="timeline-item">
               <div class="timeline-head">
-                <strong data-i18n="exp2.title">Empleada de comercio minorista — Mercería y lencería "El Costurero"</strong>
+                <span class="timeline-type exp" data-i18n="timeline.type.exp">Experiencia</span>
                 <span class="muted" data-i18n="exp2.date">Ene 2022 – Abr 2025</span>
               </div>
+              <strong data-i18n="exp2.title">Empleada de comercio minorista — Mercería y lencería "El Costurero"</strong>
               <ul>
                 <li data-i18n="exp2.resp">Brindar atención al cliente y gestionar el control de stock con herramientas de seguimiento digital.</li>
                 <li data-i18n="exp2.resp2">Revisar y actualizar precios, y organizar el espacio de venta junto con las tareas diarias del local.</li>
                 <li data-i18n="exp2.resp3">Utilizar Excel para el seguimiento de stock y la actualización de precios.</li>
               </ul>
-            </div>
-          </div>
-        </section>
-
-        <section class="section card" aria-labelledby="educacion-title">
-          <h2 class="section-title" id="educacion-title" data-i18n="education.title">Educación</h2>
-
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-head">
-                <strong data-i18n="edu1.title">Automatización QA — Talento Tech</strong>
-                <span class="muted" data-i18n="edu1.date">Mar 2026 – Jul 2026</span>
-              </div>
-              <p class="muted" data-i18n="edu1.desc">Automatización con Python, Selenium WebDriver y Pytest. POM, testing de APIs REST y BDD con Behave. Git, GitHub Actions y prácticas CI/CD.</p>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-head">
-                <strong data-i18n="edu2.title">Certificación en QA Manual y Automation — UTN</strong>
-                <span class="muted" data-i18n="edu2.date">Nov 2025 – Dic 2025</span>
-              </div>
-              <p class="muted" data-i18n="edu2.desc">Beca otorgada por Fundación Empujar. Diseño y ejecución de pruebas manuales, reporte de bugs, testing funcional/exploratorio/regresión, e introducción a QA Automation.</p>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-head">
-                <strong data-i18n="edu3.title">Programa de Empleabilidad y Habilidades Blandas — Fundación Empujar</strong>
-                <span class="muted" data-i18n="edu3.date">Ago 2025 – Dic 2025</span>
-              </div>
-              <p class="muted" data-i18n="edu3.desc">Capacitación en herramientas para la inserción laboral: desarrollo de competencias laborales, habilidades socioemocionales, autoconocimiento y empleabilidad. Fortalecimiento de comunicación, proactividad, trabajo en equipo, autonomía y liderazgo.</p>
             </div>
           </div>
         </section>
@@ -341,6 +368,7 @@
           </div>
         </section>
       </main>
+    </div>
 
     <footer class="footer">
       <div class="container">© <span id="year"></span> Agustina Rodríguez — QA Tester</div>
