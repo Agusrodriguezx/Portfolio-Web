@@ -26,28 +26,12 @@
 
   <header class="header">
     <div class="container header-inner">
-  
+      <p class="name">Agustina Rodríguez</p>
+
       <div class="header-controls">
         <div class="lang-selector" id="lang-selector" role="group" aria-label="Language selector">
           <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
           <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-        </div>
-        <a
-          id="cv-download"
-          class="action-button"
-          href="https://raw.githubusercontent.com/Agusrodriguezx/Portfolio-Web/main/assets/CVs/Agustina-Rodriguez-ES.pdf"
-          download
-          data-i18n="contact.download_cv"
-        >
-          Descargar CV
-        </a>
-      </div>
-  
-      <div class="header-brand">
-        <img src="assets/fotocv.jpeg" alt="Foto de Agustina Rodríguez" class="header-photo" />
-        <div class="header-text">
-          <p class="name">Agustina Rodríguez</p>
-          <p class="role" data-i18n="header.role">QA Tester | Manual &amp; Automatizado</p>
         </div>
       </div>
     </div>
@@ -55,6 +39,40 @@
 
     <div class="layout-wrapper">
       <main id="main" class="main-content">
+        <section class="hero">
+          <img src="assets/fotocv.jpeg" alt="Foto de Agustina Rodríguez" class="hero-photo" />
+          <div class="hero-content">
+            <p class="hero-greeting" data-i18n="hero.greeting">Hola, soy Agustina Rodríguez</p>
+            <h1 class="hero-role" data-i18n="hero.title">QA Tester Jr. | Manual &amp; Automatizado</h1>
+            <p class="hero-value" data-i18n="hero.value">Aseguro la calidad de aplicaciones web combinando testing manual y automatizado con Python, Selenium y Pytest — con atención al detalle y comunicación clara.</p>
+
+            <div class="hero-stack">
+              <span data-i18n="skill.python">Python</span>
+              <span data-i18n="skill.selenium">Selenium WebDriver</span>
+              <span data-i18n="skill.pytest">Pytest</span>
+              <span data-i18n="skill.jira">Jira</span>
+            </div>
+
+            <div class="hero-actions">
+              <a
+                id="cv-download"
+                class="btn btn-primary"
+                href="https://raw.githubusercontent.com/Agusrodriguezx/Portfolio-Web/main/assets/CVs/Agustina-Rodriguez-ES.pdf"
+                download
+                data-i18n="contact.download_cv"
+              >
+                Descargar CV
+              </a>
+              <a class="btn btn-secondary" href="https://github.com/Agusrodriguezx" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github" aria-hidden="true"></i> GitHub
+              </a>
+              <a class="btn btn-secondary" href="https://linkedin.com/in/agustinarodriguezx/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section class="section card" aria-labelledby="resumen-title">
           <h2 class="section-title" id="resumen-title" data-i18n="summary.title">Resumen</h2>
           <p data-i18n="summary.p1">
@@ -109,7 +127,7 @@
               <span class="status-tag completed" data-i18n="project.status.completed">✓ Completado</span>
             </div>
             <p class="project-tech" data-i18n="project1.tech">Jira · Gherkin · Testing exploratorio · Kanban</p>
-            <p class="muted" data-i18n="project1.context">Proyecto personal, realizado por iniciativa propia para sumar experiencia práctica.</p>
+            <p class="muted" data-i18n="project1.context">Proyecto personal orientado a la práctica de procesos y herramientas de QA.</p>
             <p data-i18n="project1.p1">
               Testing exploratorio sobre una aplicación móvil en fase beta. Documenté más de 6 tickets
               en Jira con formato estructurado (contexto, criterios de aceptación, validación de QA y
@@ -180,9 +198,9 @@
               <button class="carousel-btn next">❯</button>
               
                <div class="carousel-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <button type="button" class="dot active" aria-label="Ver imagen 1"></button>
+                <button type="button" class="dot" aria-label="Ver imagen 2"></button>
+                <button type="button" class="dot" aria-label="Ver imagen 3"></button>
               </div>
             </div>
             <a class="link-button" href="https://github.com/Agusrodriguezx/swag-labs-test-automation" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Ver repositorio →</a>
@@ -264,15 +282,15 @@
             </div>
           </div>
         </section>
-        <section class="section card" id="contacto-title">
+        <section class="section card" aria-labelledby="contacto-title">
           <h2 class="section-title" id="contacto-title" data-i18n="contact.title">Contacto</h2>
-          
+
           <ul class="contact-list">
             <li>
               <i class="fas fa-envelope" aria-hidden="true"></i>
               <a href="mailto:agustinar766@gmail.com">agustinar766@gmail.com</a>
             </li>
-            
+
             <li>
               <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
               <span data-i18n="contact.location">Buenos Aires, Argentina</span>
@@ -281,9 +299,9 @@
 
           <section class="social-section">
             <h3 class="social-title" data-i18n="contact.connect_title">Conecta conmigo</h3>
-            
+
             <div class="social-links">
-              
+
               <a
                 href="https://linkedin.com/in/agustinarodriguezx/"
                 target="_blank"
@@ -296,7 +314,7 @@
                   <path d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.68H9.35V8.99h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM3.56 20.45h3.56V8.99H3.56v11.46Z"/>
                 </svg>
               </a>
-              
+
               <a
                 href="https://github.com/Agusrodriguezx"
                 target="_blank" 
@@ -312,19 +330,17 @@
 
             </div>
           </section>
-              
-              <div class="languages-section">
-                <h3 class="social-title" data-i18n="languages.title">Idiomas</h3>
 
-              <div class="language-item">
-                <span data-i18n="languages.english">Inglés</span>
-                <strong>B2</strong>
-              </div>
+          <div class="languages-section">
+            <h3 class="social-title" data-i18n="languages.title">Idiomas</h3>
+
+            <div class="language-item">
+              <span data-i18n="languages.english">Inglés</span>
+              <strong>B2</strong>
             </div>
-          </section>
-        </main>
-        </div>
-      </aside>
+          </div>
+        </section>
+      </main>
 
     <footer class="footer">
       <div class="container">© <span id="year"></span> Agustina Rodríguez — QA Tester</div>
