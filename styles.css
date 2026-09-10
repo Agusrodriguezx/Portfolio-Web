@@ -1,16 +1,16 @@
 /* Styles for Portfolio-Web
-   Mobile-first, Montserrat + JetBrains Mono, acento bordó
+   Mobile-first, Montserrat + JetBrains Mono, paleta "Editorial Tech"
 */
 :root{
-  --accent: #7b0f1a; /* bordó */
-  --accent-soft: #f3e4e1;
-  --accent-ink: #5c0b13;
-  --bg: #faf9f7;
+  --accent: #6B1724; /* bordó principal */
+  --accent-soft: #F4EAEB; /* rosa/crema suave para badges y cards destacadas */
+  --accent-ink: #4F111A; /* bordó oscuro para hover/estados activos */
+  --bg: #F8FAFC; /* fondo general gris frío claro */
   --surface: #ffffff;
-  --text: #1c1b1f;
-  --muted: #6b6b6b;
-  --border: #ece7e4;
-  --pass: #2f6b4f;
+  --text: #1E293B; /* slate oscuro para texto principal */
+  --muted: #64748B; /* slate medio para texto secundario */
+  --border: #E2E8F0; /* slate claro para bordes */
+  --pass: #15803D; /* verde para métricas/tests OK */
   --radius: 10px;
   --mono: "JetBrains Mono", "Roboto Mono", ui-monospace, monospace;
   font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -450,7 +450,7 @@ body{
   display:inline-block;
   margin-top:0.6rem;
 }
-.link-button:focus{outline:2px solid rgba(123,15,26,0.2);outline-offset:2px;border-radius:4px}
+.link-button:focus{outline:2px solid rgba(107,23,36,0.2);outline-offset:2px;border-radius:4px}
 
 /* Footer */
 .footer{margin-top:1.6rem;text-align:center;color:var(--muted);font-size:0.85rem;padding:1rem 0}
@@ -459,7 +459,7 @@ body{
 .muted{color:var(--muted);font-size:0.9rem}
 
 /* Accessibility and focus */
-a:focus{outline:2px solid rgba(123,15,26,0.2);outline-offset:2px;border-radius:4px}
+a:focus{outline:2px solid rgba(107,23,36,0.2);outline-offset:2px;border-radius:4px}
 
 @media (prefers-reduced-motion: reduce){
   *{animation-duration:0.01ms !important;transition-duration:0.01ms !important}
@@ -518,7 +518,7 @@ a:focus{outline:2px solid rgba(123,15,26,0.2);outline-offset:2px;border-radius:4
 }
 
 .social-icon:focus{
-  outline:2px solid rgba(123,15,26,0.25);
+  outline:2px solid rgba(107,23,36,0.25);
   outline-offset:2px;
 }
 
@@ -579,6 +579,6 @@ a:focus{outline:2px solid rgba(123,15,26,0.2);outline-offset:2px;border-radius:4
 }
 
 .lang-btn:focus {
-  outline: 2px solid rgba(123,15,26,0.18);
+  outline: 2px solid rgba(107,23,36,0.18);
   outline-offset: 3px;
 }
