@@ -43,7 +43,10 @@
 
       "project1.title": "Bopp — QA Manual Testing Project",
       "project.status.completed": "✓ Completed",
-      "project1.tech": "Jira · Gherkin · Exploratory testing · Kanban",
+      "project1.tech1": "Jira",
+      "project1.tech2": "Gherkin",
+      "project1.tech3": "Exploratory testing",
+      "project1.tech4": "Kanban",
       "project1.context": "Personal project, self-initiated (no course or client involved) to gain hands-on practice.",
       "project1.p1": "Exploratory testing on a beta mobile app. I documented 6 structured Jira tickets (context, Acceptance Criteria, QA validation and evidence), organized within a Kanban workflow across Bugs and Improvements. Acceptance Criteria were written in Gherkin syntax with screenshots and recordings as evidence.",
       "project1.metric1": "✓ 6 documented tickets",
@@ -54,7 +57,11 @@
       "project1.metric6": "✓ Full Kanban workflow",
 
       "project2.title": "Automation framework — Swag Labs",
-      "project2.tech": "Python · Selenium WebDriver · Pytest · Behave · GitHub Actions",
+      "project2.tech1": "Python",
+      "project2.tech2": "Selenium WebDriver",
+      "project2.tech3": "Pytest",
+      "project2.tech4": "Behave",
+      "project2.tech5": "GitHub Actions",
       "project2.context": "Hands-on project developed during my QA Automation training at Talento Tech.",
       "project2.p1": "Automation framework using Page Object Model (POM) to cover login, inventory and cart. Implemented Data-Driven Testing with CSV/JSON datasets, automated BDD scenarios with Gherkin and Behave, and integrated REST API testing. The CI/CD pipeline in GitHub Actions runs the full suite on every push and generates HTML reports with automatic screenshots on failures.",
       "project2.metric1": "✓ 17 automated scenarios",
@@ -71,8 +78,11 @@
 
       "projects.repo": "View repository →",
       "projects.view": "View application →",
+      "projects.report": "View Test Report",
        
-      "experience.title": "Experience",
+      "timeline.title": "Experience & Education",
+      "timeline.type.exp": "Experience",
+      "timeline.type.edu": "Education",
       "exp1.title": "Event activation assistant — Nintendo, Argentina Game Show 2025",
       "exp1.resp": "Assisted visitors during the Nintendo Switch 2 presentation in Argentina (Argentina Game Show 2025).",
       "exp1.resp2": "Explained controller usage and guided attendees through interactive demos.",
@@ -85,7 +95,6 @@
       "exp1.date": "Oct 2025",
       "exp2.date": "Jan 2022 – Apr 2025",
 
-      "education.title": "Education",
       "edu1.title": "QA Automation — Talento Tech",
       "edu1.desc": "Automation with Python, Selenium WebDriver and Pytest. POM, REST API testing and BDD with Behave. Git, GitHub Actions and CI/CD practices.",
       "edu2.title": "QA Manual & Automation Testing Certification — UTN",
@@ -147,7 +156,10 @@
 
       "project1.title": "Bopp — QA Manual Testing Project",
       "project.status.completed": "✓ Completado",
-      "project1.tech": "Jira · Gherkin · Testing exploratorio · Kanban",
+      "project1.tech1": "Jira",
+      "project1.tech2": "Gherkin",
+      "project1.tech3": "Testing exploratorio",
+      "project1.tech4": "Kanban",
       "project1.context": "Proyecto personal, realizado por iniciativa propia (sin curso ni cliente de por medio) para sumar experiencia práctica.",
       "project1.p1": "Testing exploratorio sobre una aplicación móvil en fase beta. Documenté 6 tickets estructurados en Jira (contexto, Acceptance Criteria, validación de QA y evidencia), organizados dentro de un flujo Kanban entre Bugs y Mejoras. Los criterios de aceptación los redacté en sintaxis Gherkin, con capturas de pantalla y grabaciones como evidencia de cada incidencia.",
       "project1.metric1": "✓ 6 tickets documentados",
@@ -158,7 +170,11 @@
       "project1.metric6": "✓ Flujo Kanban completo",
 
       "project2.title": "Framework de automatización — Swag Labs",
-      "project2.tech": "Python · Selenium WebDriver · Pytest · Behave · GitHub Actions",
+      "project2.tech1": "Python",
+      "project2.tech2": "Selenium WebDriver",
+      "project2.tech3": "Pytest",
+      "project2.tech4": "Behave",
+      "project2.tech5": "GitHub Actions",
       "project2.context": "Proyecto práctico desarrollado durante mi formación en QA Automation con Talento Tech.",
       "project2.p1": "Framework de automatización con Page Object Model (POM) para cubrir login, inventario y carrito de compras. Implementé Data-Driven Testing con datasets en CSV/JSON, automatizé escenarios BDD con Gherkin y Behave, e integré testing de APIs REST. El pipeline de CI/CD en GitHub Actions corre la suite completa en cada push y genera reportes HTML con capturas automáticas ante fallos.",
       "project2.metric1": "✓ 17 escenarios automatizados",
@@ -175,8 +191,11 @@
 
       "projects.repo": "Ver repositorio →",
       "projects.view": "Ver aplicación →",
+      "projects.report": "Ver Reporte de Pruebas",
        
-      "experience.title": "Experiencia",
+      "timeline.title": "Experiencia y Educación",
+      "timeline.type.exp": "Experiencia",
+      "timeline.type.edu": "Educación",
       "exp1.title": "Asistente en evento de activación — Nintendo, Argentina Game Show 2025",
       "exp1.resp": "Brindar asistencia a usuarios durante la presentación de la Nintendo Switch 2 en Argentina (Argentina Game Show 2025).",
       "exp1.resp2": "Explicar el uso de los mandos y guiar a los asistentes en demos interactivas.",
@@ -189,7 +208,6 @@
       "exp1.date": "Oct 2025",
       "exp2.date": "Ene 2022 – Abr 2025",
 
-      "education.title": "Educación",
       "edu1.title": "Automatización QA — Talento Tech",
       "edu1.desc": "Automatización con Python, Selenium WebDriver y Pytest. POM, testing de APIs REST y BDD con Behave. Git, GitHub Actions y prácticas CI/CD.",
       "edu2.title": "Certificación en QA Manual y Automation — UTN",
