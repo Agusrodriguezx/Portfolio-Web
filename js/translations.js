@@ -5,15 +5,15 @@
 (function () {
   const translations = {
     en: {
-      "meta.title": "Agustina Rodríguez — QA Tester",
-      "meta.description": "Agustina Rodríguez's Portfolio — Manual & Automation QA Tester. Exploratory, functional testing and automation with Python and Selenium.",
+      "meta.title": "Agustina Rodriguez — QA Tester",
+      "meta.description": "Agustina Rodriguez's Portfolio — Manual & Automation QA Tester. Exploratory, functional testing and automation with Python and Selenium.",
 
       "nav.summary": "Summary",
       "nav.projects": "Projects",
       "nav.timeline": "Experience",
       "nav.contact": "Contact",
        
-      "hero.greeting": "Hi, I'm Agustina Rodríguez",
+      "hero.greeting": "Hi, I'm Agustina Rodriguez",
       "hero.title": "QA Tester Jr. | Manual & Automation Testing",
       "hero.value": "I ensure web application quality by combining manual and automated testing with Python, Selenium and Pytest — with strong attention to detail and clear communication.",
 
@@ -124,15 +124,15 @@
     },
 
     es: {
-      "meta.title": "Agustina Rodríguez — QA Tester",
-      "meta.description": "Portfolio de Agustina Rodríguez — QA Tester Manual y Automatizada. Testing exploratorio, funcional y automatización con Python y Selenium.",
+      "meta.title": "Agustina Rodriguez — QA Tester",
+      "meta.description": "Portfolio de Agustina Rodriguez — QA Tester Manual y Automatizada. Testing exploratorio, funcional y automatización con Python y Selenium.",
 
       "nav.summary": "Resumen",
       "nav.projects": "Proyectos",
       "nav.timeline": "Trayectoria",
       "nav.contact": "Contacto",
 
-      "hero.greeting": "Hola, soy Agustina Rodríguez",
+      "hero.greeting": "Hola, soy Agustina Rodriguez",
       "hero.title": "QA Tester Jr. | Manual & Automatizado",
       "hero.value": "Aseguro la calidad de aplicaciones web combinando testing manual y automatizado con Python, Selenium y Pytest — con atención al detalle y comunicación clara.",
 
