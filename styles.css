@@ -28,6 +28,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section.card {
+  scroll-margin-top: 80px;
+}
+
 body {
   margin: 0;
   background: var(--bg);
