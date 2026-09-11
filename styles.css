@@ -983,6 +983,9 @@ a:focus {
    Media Queries - Mobile
    ========================================================================== */
 @media (max-width: 699px) {
+  h2[id],section[id] {
+    scroll-margin-top: 100px; 
+   
   body {
     padding-top: 55px;
   }
