@@ -979,6 +979,15 @@ a:focus {
     padding-top: 55px; /* Ajuste compensatorio para header móvil */
   }
 
+  .hero {
+    padding: 48px 1rem 32px;
+    gap: 1rem;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+   
   .section {
     margin-top: 32px;
   }
