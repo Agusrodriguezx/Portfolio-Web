@@ -145,12 +145,11 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("active");
-          // Opcional: deja de observar una vez que ya se animó
-          observer.unobserve(entry.target);
+          // observer.unobserve(entry.target);
         }
       });
     }, {
-      threshold: 0.15 // Se activa cuando el 15% del elemento es visible
+      threshold: 0.10
     });
     
     document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
