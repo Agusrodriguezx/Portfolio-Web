@@ -187,8 +187,9 @@ body{
 
 /* Header */
 .header{
-  border-bottom: 1px solid var(--border);
-  background: var(--surface);
+  border-bottom: 1px solid rgba(107,23,36,0.14);
+  background: var(--accent-soft);
+  box-shadow: 0 1px 3px rgba(107,23,36,0.08);
 }
 
 .header-inner{
@@ -662,8 +663,9 @@ a:focus{outline:2px solid rgba(107,23,36,0.2);outline-offset:2px;border-radius:4
 }
 
 .menu-toggle:hover{
-  background:var(--accent-soft);
-  border-color:rgba(107,23,36,0.2);
+  background:var(--surface);
+  border-color:var(--accent);
+  box-shadow:0 1px 4px rgba(107,23,36,0.18);
 }
 
 /* Mobile nav panel */
