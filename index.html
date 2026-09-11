@@ -2,73 +2,94 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title data-i18n="meta.title">Agustina Rodriguez — QA Tester</title>
-    <meta name="description" data-i18n="meta.description" data-i18n-attr="content" content="Agustina Rodriguez's Portfolio — Manual & Automation QA Tester. Exploratory, functional testing and automation with Python and Selenium." />
-    <link rel="icon" type="image/png" href="assets/ladybug-favicon.png">
+    <meta
+      name="description"
+      data-i18n="meta.description"
+      data-i18n-attr="content"
+      content="Agustina Rodriguez's Portfolio — Manual & Automation QA Tester. Exploratory, functional testing and automation with Python and Selenium."
+    />
+    <link rel="icon" type="image/png" href="assets/ladybug-favicon.png" />
+
+    <!-- Fuentes e Iconos -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Estilos generales -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Accesibilidad: Salto directo al contenido -->
     <a href="#main" class="skip-link">Saltar al contenido</a>
-  <header class="header">
-    <div class="container header-inner">
-      <p class="name">Agustina Rodriguez</p>
 
-      <nav class="main-nav" aria-label="Secciones del portfolio">
+    <!-- Header / Barra de navegación superior -->
+    <header class="header">
+      <div class="container header-inner">
+        <p class="name">Agustina Rodriguez</p>
+
+        <!-- Navegación principal (Desktop) -->
+        <nav class="main-nav" aria-label="Secciones del portfolio">
+          <a href="#resumen-title" data-i18n="nav.summary">Resumen</a>
+          <a href="#proyectos-title" data-i18n="nav.projects">Proyectos</a>
+          <a href="#trayectoria-title" data-i18n="nav.timeline">Trayectoria</a>
+          <a href="#contacto-title" data-i18n="nav.contact">Contacto</a>
+        </nav>
+
+        <!-- Controles: Selector de idioma y menú hamburguesa -->
+        <div class="header-controls">
+          <div class="lang-selector" id="lang-selector" role="group" aria-label="Language selector">
+            <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menú de secciones"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menú desplegable para móviles -->
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Secciones del portfolio (mobile)">
         <a href="#resumen-title" data-i18n="nav.summary">Resumen</a>
         <a href="#proyectos-title" data-i18n="nav.projects">Proyectos</a>
         <a href="#trayectoria-title" data-i18n="nav.timeline">Trayectoria</a>
         <a href="#contacto-title" data-i18n="nav.contact">Contacto</a>
       </nav>
+    </header>
 
-      <div class="header-controls">
-        <div class="lang-selector" id="lang-selector" role="group" aria-label="Language selector">
-          <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
-          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-        </div>
-        <button
-          type="button"
-          class="menu-toggle"
-          id="menu-toggle"
-          aria-label="Abrir menú de secciones"
-          aria-expanded="false"
-          aria-controls="mobile-nav"
-        >
-          <i class="fas fa-bars" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Secciones del portfolio (mobile)">
-      <a href="#resumen-title" data-i18n="nav.summary">Resumen</a>
-      <a href="#proyectos-title" data-i18n="nav.projects">Proyectos</a>
-      <a href="#trayectoria-title" data-i18n="nav.timeline">Trayectoria</a>
-      <a href="#contacto-title" data-i18n="nav.contact">Contacto</a>
-    </nav>
-  </header>
-
+    <!-- Envoltorio principal -->
     <div class="layout-wrapper">
       <main id="main" class="main-content">
+
+        <!-- Sección de bienvenida / Hero -->
         <section class="hero">
           <img src="assets/fotocv.jpeg" alt="Foto de Agustina Rodríguez" class="hero-photo" />
+
           <div class="hero-content">
             <p class="hero-greeting" data-i18n="hero.greeting">Hola, soy</p>
             <h1 class="hero-name">Agustina Rodriguez</h1>
             <p class="hero-role" data-i18n="hero.title">QA Tester Jr. | Manual &amp; Automatizado</p>
-            <p class="hero-value" data-i18n="hero.value">Aseguro la calidad de aplicaciones web combinando testing manual y automatizado con Python, Selenium y Pytest — con atención al detalle y comunicación clara.</p>
+            <p class="hero-value" data-i18n="hero.value">
+              Aseguro la calidad de aplicaciones web combinando testing manual y automatizado con Python, Selenium y Pytest — con atención al detalle y comunicación clara.
+            </p>
 
             <div class="hero-actions">
               <a
@@ -93,6 +114,7 @@
           </div>
         </section>
 
+        <!-- Resumen profesional y Habilidades -->
         <section class="section card reveal" aria-labelledby="resumen-title">
           <h2 class="section-title" id="resumen-title" data-i18n="summary.title">Resumen</h2>
           <p data-i18n="summary.p1">
@@ -115,6 +137,7 @@
                 <li class="skill-item" data-i18n="skill.postman">Postman</li>
               </ul>
             </div>
+
             <div class="skills-group">
               <h3 class="skills-group-title" data-i18n="skills.qa_practices">Prácticas de QA</h3>
               <ul class="skills-list">
@@ -125,6 +148,7 @@
                 <li class="skill-item" data-i18n="skill.bug_reports">Reporte de bugs</li>
               </ul>
             </div>
+
             <div class="skills-group">
               <h3 class="skills-group-title" data-i18n="skills.tools_title">Herramientas y colaboración</h3>
               <ul class="skills-list">
@@ -138,9 +162,11 @@
           </div>
         </section>
 
+        <!-- Proyectos -->
         <section class="section card reveal" aria-labelledby="proyectos-title">
           <h2 class="section-title" id="proyectos-title" data-i18n="projects.title">Proyectos destacados</h2>
 
+          <!-- Proyecto 1: Bopp -->
           <article class="project-card">
             <div class="project-head">
               <h3 data-i18n="project1.title">Bopp — QA Manual Testing Project</h3>
@@ -173,16 +199,14 @@
             </p>
 
             <div class="carousel">
-              <img src="assets/projects/bopp-board.png" class="carousel-image active" alt="Tablero Kanban de Jira">
-  
-              <img src="assets/projects/bopp-ticket.png" class="carousel-image" alt="Ticket documentado en Jira">
-              
-              <img src="assets/projects/bopp-bug.png" class="carousel-image" alt="Reporte de incidencia">
-              
+              <img src="assets/projects/bopp-board.png" class="carousel-image active" alt="Tablero Kanban de Jira" />
+              <img src="assets/projects/bopp-ticket.png" class="carousel-image" alt="Ticket documentado en Jira" />
+              <img src="assets/projects/bopp-bug.png" class="carousel-image" alt="Reporte de incidencia" />
+
               <button class="carousel-btn prev">❮</button>
               <button class="carousel-btn next">❯</button>
-              
-               <div class="carousel-dots">
+
+              <div class="carousel-dots">
                 <button type="button" class="dot active" aria-label="Ver imagen 1"></button>
                 <button type="button" class="dot" aria-label="Ver imagen 2"></button>
                 <button type="button" class="dot" aria-label="Ver imagen 3"></button>
@@ -191,12 +215,10 @@
 
             <div class="project-cta">
               <a class="btn btn-primary" href="https://github.com/Agusrodriguezx/Bopp-QA-Project" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Ver repositorio →</a>
-              <!-- Activar cuando exista el archivo de reporte:
-              <a class="btn btn-secondary" href="RUTA_AL_REPORTE.pdf" target="_blank" rel="noopener noreferrer" data-i18n="projects.report">Ver Reporte de Pruebas</a>
-              -->
             </div>
           </article>
 
+          <!-- Proyecto 2: Swag Labs -->
           <article class="project-card">
             <div class="project-head">
               <h3 data-i18n="project2.title">Framework de automatización — Swag Labs</h3>
@@ -220,7 +242,7 @@
               <li data-i18n="project2.tech5">GitHub Actions</li>
             </ul>
 
-             <p class="muted" data-i18n="project2.context">Proyecto práctico desarrollado durante mi formación en QA Automation con Talento Tech.</p>
+            <p class="muted" data-i18n="project2.context">Proyecto práctico desarrollado durante mi formación en QA Automation con Talento Tech.</p>
             <p data-i18n="project2.p1">
               Framework de automatización con Page Object Model (POM) para cubrir login, inventario y
               carrito de compras. Implementé Data-Driven Testing con datasets en CSV/JSON (casos
@@ -230,16 +252,14 @@
             </p>
 
             <div class="carousel">
-              <img src="assets/projects/swag-htmlreport.png" class="carousel-image active" alt="README del proyecto">
-  
-              <img src="assets/projects/swag-report.png" class="carousel-image" alt="Reporte de incidencia automatizado">
-              
-              <img src="assets/projects/swag-tests.png" class="carousel-image" alt="Tests automatizados">
-              
+              <img src="assets/projects/swag-htmlreport.png" class="carousel-image active" alt="README del proyecto" />
+              <img src="assets/projects/swag-report.png" class="carousel-image" alt="Reporte de incidencia automatizado" />
+              <img src="assets/projects/swag-tests.png" class="carousel-image" alt="Tests automatizados" />
+
               <button class="carousel-btn prev">❮</button>
               <button class="carousel-btn next">❯</button>
-              
-               <div class="carousel-dots">
+
+              <div class="carousel-dots">
                 <button type="button" class="dot active" aria-label="Ver imagen 1"></button>
                 <button type="button" class="dot" aria-label="Ver imagen 2"></button>
                 <button type="button" class="dot" aria-label="Ver imagen 3"></button>
@@ -248,21 +268,21 @@
 
             <div class="project-cta">
               <a class="btn btn-primary" href="https://github.com/Agusrodriguezx/swag-labs-test-automation" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Ver repositorio →</a>
-              <!-- Activar cuando exista el archivo de reporte:
-              <a class="btn btn-secondary" href="RUTA_AL_REPORTE.pdf" target="_blank" rel="noopener noreferrer" data-i18n="projects.report">Ver Reporte de Pruebas</a>
-              -->
             </div>
           </article>
 
+          <!-- Proyecto 3: Cinema App -->
           <article class="project-card">
             <div class="project-head">
               <h3 data-i18n="project3.title">Cinema Ticket Booking</h3>
               <span class="status-tag in-progress" data-i18n="project.status.inprogress">⏱ En progreso</span>
             </div>
+
             <p class="project-tech" data-i18n="project3.tech">App de reserva de tickets para funciones de cine</p>
             <p data-i18n="project3.p1">
               Aplicación para la reserva y compra de tickets de cine con interfaz intuitiva. Actualmente en desarrollo con funcionalidades de selección de asientos, gestión de funciones y compra.
             </p>
+
             <div class="project-cta">
               <a class="btn btn-primary" href="https://cineplus-app-two.vercel.app/" target="_blank" rel="noopener noreferrer" data-i18n="projects.view">Ver aplicación →</a>
               <a class="btn btn-secondary" href="https://github.com/Agusrodriguezx/Cinema-Ticket-Booking-App" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Ver repositorio →</a>
@@ -270,37 +290,48 @@
           </article>
         </section>
 
+        <!-- Trayectoria: Educación y Experiencia -->
         <section class="section card reveal" aria-labelledby="trayectoria-title">
           <h2 class="section-title" id="trayectoria-title" data-i18n="timeline.title">Experiencia y Educación</h2>
 
           <div class="timeline">
+            <!-- Item 1 -->
             <div class="timeline-item">
               <div class="timeline-head">
                 <span class="timeline-type edu" data-i18n="timeline.type.edu">Educación</span>
                 <span class="muted" data-i18n="edu1.date">Mar 2026 – Jul 2026</span>
               </div>
               <strong data-i18n="edu1.title">Automatización QA — Talento Tech</strong>
-              <p class="muted" data-i18n="edu1.desc">Automatización con Python, Selenium WebDriver y Pytest. POM, testing de APIs REST y BDD con Behave. Git, GitHub Actions y prácticas CI/CD.</p>
+              <p class="muted" data-i18n="edu1.desc">
+                Automatización con Python, Selenium WebDriver y Pytest. POM, testing de APIs REST y BDD con Behave. Git, GitHub Actions y prácticas CI/CD.
+              </p>
             </div>
 
+            <!-- Item 2 -->
             <div class="timeline-item">
               <div class="timeline-head">
                 <span class="timeline-type edu" data-i18n="timeline.type.edu">Educación</span>
                 <span class="muted" data-i18n="edu2.date">Nov 2025 – Dic 2025</span>
               </div>
               <strong data-i18n="edu2.title">Certificación en QA Manual y Automation — UTN</strong>
-              <p class="muted" data-i18n="edu2.desc">Beca otorgada por Fundación Empujar. Diseño y ejecución de pruebas manuales, reporte de bugs, testing funcional/exploratorio/regresión, e introducción a QA Automation.</p>
+              <p class="muted" data-i18n="edu2.desc">
+                Beca otorgada por Fundación Empujar. Diseño y ejecución de pruebas manuales, reporte de bugs, testing funcional/exploratorio/regresión, e introducción a QA Automation.
+              </p>
             </div>
 
+            <!-- Item 3 -->
             <div class="timeline-item">
               <div class="timeline-head">
                 <span class="timeline-type edu" data-i18n="timeline.type.edu">Educación</span>
                 <span class="muted" data-i18n="edu3.date">Ago 2025 – Dic 2025</span>
               </div>
               <strong data-i18n="edu3.title">Programa de Empleabilidad y Habilidades Blandas — Fundación Empujar</strong>
-              <p class="muted" data-i18n="edu3.desc">Capacitación en herramientas para la inserción laboral: desarrollo de competencias laborales, habilidades socioemocionales, autoconocimiento y empleabilidad. Fortalecimiento de comunicación, proactividad, trabajo en equipo, autonomía y liderazgo.</p>
+              <p class="muted" data-i18n="edu3.desc">
+                Capacitación en herramientas para la inserción laboral: desarrollo de competencias laborales, habilidades socioemocionales, autoconocimiento y empleabilidad. Fortalecimiento de comunicación, proactividad, trabajo en equipo, autonomía y liderazgo.
+              </p>
             </div>
 
+            <!-- Item 4 -->
             <div class="timeline-item">
               <div class="timeline-head">
                 <span class="timeline-type exp" data-i18n="timeline.type.exp">Experiencia</span>
@@ -315,6 +346,7 @@
               </ul>
             </div>
 
+            <!-- Item 5 -->
             <div class="timeline-item">
               <div class="timeline-head">
                 <span class="timeline-type exp" data-i18n="timeline.type.exp">Experiencia</span>
@@ -329,6 +361,8 @@
             </div>
           </div>
         </section>
+
+        <!-- Contacto y Redes -->
         <section class="section card reveal" aria-labelledby="contacto-title">
           <h2 class="section-title" id="contacto-title" data-i18n="contact.title">Contacto</h2>
 
@@ -337,7 +371,6 @@
               <i class="fas fa-envelope" aria-hidden="true"></i>
               <a href="mailto:agustinar766@gmail.com">agustinar766@gmail.com</a>
             </li>
-
             <li>
               <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
               <span data-i18n="contact.location">Buenos Aires, Argentina</span>
@@ -346,11 +379,11 @@
 
           <a class="btn btn-primary contact-cta" href="mailto:agustinar766@gmail.com" data-i18n="contact.send_email">Enviar email</a>
 
+          <!-- Enlaces a redes sociales -->
           <section class="social-section">
             <h3 class="social-title" data-i18n="contact.connect_title">Conecta conmigo</h3>
 
             <div class="social-links">
-
               <a
                 href="https://linkedin.com/in/agustinarodriguezx/"
                 target="_blank"
@@ -376,26 +409,28 @@
                   <path d="M12 .67a11.67 11.67 0 0 0-3.69 22.74c.58.1.8-.25.8-.56v-2.02c-3.26.71-3.95-1.57-3.95-1.57-.53-1.36-1.3-1.72-1.3-1.72-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.72 1.27 3.39.97.1-.76.41-1.27.74-1.56-2.6-.3-5.34-1.3-5.34-5.79 0-1.28.46-2.32 1.2-3.14-.12-.3-.52-1.5.11-3.1 0 0 .98-.31 3.2 1.2a11.1 11.1 0 0 1 2.92-.39c.99 0 1.98.13 2.92.39 2.22-1.51 3.2-1.2 3.2-1.2.63 1.6.23 2.8.11 3.1.75.82 1.2 1.86 1.2 3.14 0 4.5-2.75 5.48-5.36 5.78.42.36.79 1.08.79 2.18v3.23c0 .31.21.67.8.56A11.67 11.67 0 0 0 12 .67Z"/>
                 </svg>
               </a>
-
             </div>
           </section>
 
+          <!-- Idiomas -->
           <div class="languages-section">
             <h3 class="social-title" data-i18n="languages.title">Idiomas</h3>
-
             <div class="language-item">
               <span data-i18n="languages.english">Inglés</span>
               <strong>B2</strong>
             </div>
           </div>
         </section>
+
       </main>
     </div>
 
+    <!-- Pie de página -->
     <footer class="footer">
       <div class="container">© <span id="year"></span> Agustina Rodríguez — QA Tester</div>
     </footer>
 
+    <!-- Scripts de internacionalización y comportamiento -->
     <script src="js/translations.js"></script>
     <script src="script.js"></script>
   </body>
