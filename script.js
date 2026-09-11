@@ -1,329 +1,151 @@
-/* translations.js
-   Centralized translations (en / es) and runtime application without reload.
-   Loads on DOMContentLoaded, applies strings to elements with data-i18n
-*/
 (function () {
-  const translations = {
-    en: {
-      "meta.title": "Agustina Rodríguez — QA Tester",
-      "meta.description": "Agustina Rodríguez's Portfolio — Manual & Automation QA Tester. Exploratory, functional testing and automation with Python and Selenium.",
+  const yearEl = document.getElementById("year");
 
-      "nav.summary": "Summary",
-      "nav.projects": "Projects",
-      "nav.timeline": "Experience",
-      "nav.contact": "Contact",
-       
-      "hero.greeting": "Hi, I'm",
-      "hero.title": "QA Tester Jr. | Manual & Automation Testing",
-      "hero.value": "I ensure web application quality by combining manual and automated testing with Python, Selenium and Pytest — with strong attention to detail and clear communication.",
-
-      "header.role": "QA Tester Jr. | Manual & Automation",
-
-      "summary.title": "Summary",
-      "summary.p1": "I am a QA Engineer with training in manual and automated testing for web applications. I combine exploratory and functional testing with automation using Python, Selenium and Pytest, and I am comfortable both documenting Bug Reports in Jira and building test frameworks integrated into CI/CD pipelines. I come from three years in customer service, so clear communication and attention to detail are natural parts of how I work. I'm used to working remotely with distributed teams.",
-
-      "skills.automation_title": "Automation & testing",
-      "skill.python": "Python",
-      "skill.selenium": "Selenium WebDriver",
-      "skill.pytest": "Pytest",
-      "skill.cypress": "Cypress",
-      "skill.behave": "Behave (BDD)",
-      "skill.postman": "Postman",
-
-      "skills.qa_practices": "QA practices",
-      "skill.manual_testing": "Manual Testing",
-      "skill.functional": "Functional & Regression Testing",
-      "skill.exploratory": "Exploratory testing",
-      "skill.test_design": "Test case design",
-      "skill.bug_reports": "Bug Reports",
-
-      "skills.tools_title": "Tools & collaboration",
-      "skill.git": "Git / GitHub",
-      "skill.github_actions": "GitHub Actions",
-      "skill.jira": "Jira",
-      "skill.sql": "SQL",
-      "skill.scrum": "Scrum / Kanban",
-
-      "projects.title": "Featured projects",
-
-      "project1.title": "Bopp — QA Manual Testing Project",
-      "project.status.completed": "✓ Completed",
-      "project1.tech1": "Jira",
-      "project1.tech2": "Gherkin",
-      "project1.tech3": "Exploratory testing",
-      "project1.tech4": "Kanban",
-      "project1.context": "Personal project, self-initiated (no course or client involved) to gain hands-on practice.",
-      "project1.p1": "Exploratory testing on a beta mobile app. I documented 6 structured Jira tickets (context, Acceptance Criteria, QA validation and evidence), organized within a Kanban workflow across Bugs and Improvements. Acceptance Criteria were written in Gherkin syntax with screenshots and recordings as evidence.",
-      "project1.metric1": "✓ 6 documented tickets",
-      "project1.metric2": "✓ 4 bugs reported",
-      "project1.metric3": "✓ 2 user stories",
-      "project1.metric4": "✓ Gherkin acceptance criteria",
-      "project1.metric5": "✓ Screenshots and visual evidence",
-      "project1.metric6": "✓ Full Kanban workflow",
-
-      "project2.title": "Automation framework — Swag Labs",
-      "project2.tech1": "Python",
-      "project2.tech2": "Selenium WebDriver",
-      "project2.tech3": "Pytest",
-      "project2.tech4": "Behave",
-      "project2.tech5": "GitHub Actions",
-      "project2.context": "Hands-on project developed during my QA Automation training at Talento Tech.",
-      "project2.p1": "Automation framework using Page Object Model (POM) to cover login, inventory and cart. Implemented Data-Driven Testing with CSV/JSON datasets, automated BDD scenarios with Gherkin and Behave, and integrated REST API testing. The CI/CD pipeline in GitHub Actions runs the full suite on every push and generates HTML reports with automatic screenshots on failures.",
-      "project2.metric1": "✓ 17 automated scenarios",
-      "project2.metric2": "✓ 3 functional modules covered",
-      "project2.metric3": "✓ Data-Driven Testing CSV/JSON",
-      "project2.metric4": "✓ BDD with Gherkin and Behave",
-      "project2.metric5": "✓ CI/CD with GitHub Actions",
-      "project2.metric6": "✓ HTML reports with failure screenshots",
-
-      "project3.title": "CinemaPlus App",
-      "project.status.inprogress": "⏱ In progress",
-      "project3.tech": "Ticket booking app for cinema shows",
-      "project3.p1": "Application for reserving and purchasing cinema tickets with an intuitive UI. Currently in development with seat selection, show management and purchase flow.",
-
-      "projects.repo": "View repository →",
-      "projects.view": "View application →",
-      "projects.report": "View Test Report",
-       
-      "timeline.title": "Experience & Education",
-      "timeline.type.exp": "Experience",
-      "timeline.type.edu": "Education",
-      "exp1.title": "Event activation assistant — Nintendo, Argentina Game Show 2025",
-      "exp1.resp": "Assisted visitors during the Nintendo Switch 2 presentation in Argentina (Argentina Game Show 2025).",
-      "exp1.resp2": "Explained controller usage and guided attendees through interactive demos.",
-      "exp1.resp3": "Observed players' experience during the demos and resolved their questions in real time.",
-      "exp1.resp4": "Strengthened communication, attention to detail and user-orientation skills in a high-traffic public event.",
-      "exp2.title": "Retail employee — \"El Costurero\" haberdashery",
-      "exp2.resp": "Provided customer service and managed stock control using digital tracking tools.",
-      "exp2.resp2": "Reviewed and updated prices, and organized the sales floor and daily store tasks.",
-      "exp2.resp3": "Used Excel to track stock and update prices.",
-      "exp1.date": "Oct 2025",
-      "exp2.date": "Jan 2022 – Apr 2025",
-
-      "edu1.title": "QA Automation — Talento Tech",
-      "edu1.desc": "Automation with Python, Selenium WebDriver and Pytest. POM, REST API testing and BDD with Behave. Git, GitHub Actions and CI/CD practices.",
-      "edu2.title": "QA Manual & Automation Testing Certification — UTN",
-      "edu2.desc": "Scholarship by Fundación Empujar. Test design and execution, Bug Reports, functional/exploratory/regression testing and intro to automation.",
-      "edu3.title": "Employability & Soft Skills Program — Fundación Empujar",
-      "edu3.desc": "Training in job-readiness tools: development of professional competencies, socio-emotional skills, self-awareness and employability. Strengthened communication, proactivity, teamwork, autonomy and leadership.",
-      "edu1.date": "Mar 2026 – Jul 2026",
-      "edu2.date": "Nov 2025 – Dec 2025",
-      "edu3.date": "Aug 2025 – Dec 2025",
-
-
-      "contact.title": "Contact",
-      "contact.location": "Buenos Aires, Argentina",
-      "contact.connect_title": "Connect with me",
-      "languages.title": "Languages",
-      "languages.english": "English",
-      "languages.spanish": "Spanish",
-      "contact.download_cv": "Download Resume",
-      "contact.send_email": "Send email",
-
-      "footer.copy": "© {year} — Agustina Rodríguez — QA Tester."
-    },
-
-    es: {
-      "meta.title": "Agustina Rodríguez — QA Tester",
-      "meta.description": "Portfolio de Agustina Rodríguez — QA Tester Manual y Automatizada. Testing exploratorio, funcional y automatización con Python y Selenium.",
-
-      "nav.summary": "Resumen",
-      "nav.projects": "Proyectos",
-      "nav.timeline": "Trayectoria",
-      "nav.contact": "Contacto",
-
-      "hero.greeting": "Hola, soy",
-      "hero.title": "QA Tester Jr. | Manual & Automatizado",
-      "hero.value": "Aseguro la calidad de aplicaciones web combinando testing manual y automatizado con Python, Selenium y Pytest — con atención al detalle y comunicación clara.",
-
-      "header.role": "QA Tester Jr. | Manual & Automatizado",
-
-      "summary.title": "Resumen",
-      "summary.p1": "Soy QA Tester con formación en testing manual y automatizado de aplicaciones web. Combino pruebas exploratorias y funcionales con automatización en Python, Selenium y Pytest, y trabajo cómoda tanto documentando Bug Reports en Jira como armando frameworks de testing con integración continua. Vengo de tres años en atención al cliente, así que la comunicación clara y la atención al detalle son parte natural de cómo trabajo. Estoy acostumbrada a trabajar de forma remota con equipos distribuidos.",
-
-      "skills.automation_title": "Automatización y testing",
-      "skill.python": "Python",
-      "skill.selenium": "Selenium WebDriver",
-      "skill.pytest": "Pytest",
-      "skill.cypress": "Cypress",
-      "skill.behave": "Behave (BDD)",
-      "skill.postman": "Postman",
-
-      "skills.qa_practices": "Prácticas de QA",
-      "skill.manual_testing": "Testing manual",
-      "skill.functional": "Funcional / Regresión",
-      "skill.exploratory": "Testing exploratorio",
-      "skill.test_design": "Diseño de casos de prueba",
-      "skill.bug_reports": "Reporte de bugs",
-
-      "skills.tools_title": "Herramientas y colaboración",
-      "skill.git": "Git / GitHub",
-      "skill.github_actions": "GitHub Actions",
-      "skill.jira": "Jira",
-      "skill.sql": "SQL",
-      "skill.scrum": "Scrum / Kanban",
-
-      "projects.title": "Proyectos destacados",
-
-      "project1.title": "Bopp — QA Manual Testing Project",
-      "project.status.completed": "✓ Completado",
-      "project1.tech1": "Jira",
-      "project1.tech2": "Gherkin",
-      "project1.tech3": "Testing exploratorio",
-      "project1.tech4": "Kanban",
-      "project1.context": "Proyecto personal, realizado por iniciativa propia (sin curso ni cliente de por medio) para sumar experiencia práctica.",
-      "project1.p1": "Testing exploratorio sobre una aplicación móvil en fase beta. Documenté 6 tickets estructurados en Jira (contexto, Acceptance Criteria, validación de QA y evidencia), organizados dentro de un flujo Kanban entre Bugs y Mejoras. Los criterios de aceptación los redacté en sintaxis Gherkin, con capturas de pantalla y grabaciones como evidencia de cada incidencia.",
-      "project1.metric1": "✓ 6 tickets documentados",
-      "project1.metric2": "✓ 4 bugs reportados",
-      "project1.metric3": "✓ 2 historias de usuario",
-      "project1.metric4": "✓ Criterios de aceptación en Gherkin",
-      "project1.metric5": "✓ Capturas y evidencia visual",
-      "project1.metric6": "✓ Flujo Kanban completo",
-
-      "project2.title": "Framework de automatización — Swag Labs",
-      "project2.tech1": "Python",
-      "project2.tech2": "Selenium WebDriver",
-      "project2.tech3": "Pytest",
-      "project2.tech4": "Behave",
-      "project2.tech5": "GitHub Actions",
-      "project2.context": "Proyecto práctico desarrollado durante mi formación en QA Automation con Talento Tech.",
-      "project2.p1": "Framework de automatización con Page Object Model (POM) para cubrir login, inventario y carrito de compras. Implementé Data-Driven Testing con datasets en CSV/JSON, automatizé escenarios BDD con Gherkin y Behave, e integré testing de APIs REST. El pipeline de CI/CD en GitHub Actions corre la suite completa en cada push y genera reportes HTML con capturas automáticas ante fallos.",
-      "project2.metric1": "✓ 17 escenarios automatizados",
-      "project2.metric2": "✓ 3 módulos funcionales cubiertos",
-      "project2.metric3": "✓ Data-Driven Testing CSV/JSON",
-      "project2.metric4": "✓ BDD con Gherkin y Behave",
-      "project2.metric5": "✓ CI/CD con GitHub Actions",
-      "project2.metric6": "✓ Reportes HTML con capturas de fallos",
-
-      "project3.title": "Cineplus App",
-      "project.status.inprogress": "⏱ En progreso",
-      "project3.tech": "App de reserva de tickets para funciones de cine",
-      "project3.p1": "Aplicación para la reserva y compra de tickets de cine con interfaz intuitiva. Actualmente en desarrollo con funcionalidades de selección de asientos, gestión de funciones y compra.",
-
-      "projects.repo": "Ver repositorio →",
-      "projects.view": "Ver aplicación →",
-      "projects.report": "Ver Reporte de Pruebas",
-       
-      "timeline.title": "Experiencia y Educación",
-      "timeline.type.exp": "Experiencia",
-      "timeline.type.edu": "Educación",
-      "exp1.title": "Asistente en evento de activación — Nintendo, Argentina Game Show 2025",
-      "exp1.resp": "Brindar asistencia a usuarios durante la presentación de la Nintendo Switch 2 en Argentina (Argentina Game Show 2025).",
-      "exp1.resp2": "Explicar el uso de los mandos y guiar a los asistentes en demos interactivas.",
-      "exp1.resp3": "Observar la experiencia de los jugadores durante las demos y resolver sus consultas en tiempo real.",
-      "exp1.resp4": "Reforzar habilidades de comunicación, atención al detalle y orientación al usuario en un evento de alto volumen de público.",
-      "exp2.title": "Empleada de comercio minorista — Mercería y lencería \"El Costurero\"",
-      "exp2.resp": "Brindar atención al cliente y gestionar el control de stock con herramientas de seguimiento digital.",
-      "exp2.resp2": "Revisar y actualizar precios, y organizar el espacio de venta junto con las tareas diarias del local.",
-      "exp2.resp3": "Utilizar Excel para el seguimiento de stock y la actualización de precios.",
-      "exp1.date": "Oct 2025",
-      "exp2.date": "Ene 2022 – Abr 2025",
-
-      "edu1.title": "Automatización QA — Talento Tech",
-      "edu1.desc": "Automatización con Python, Selenium WebDriver y Pytest. POM, testing de APIs REST y BDD con Behave. Git, GitHub Actions y prácticas CI/CD.",
-      "edu2.title": "Certificación en QA Manual y Automation — UTN",
-      "edu2.desc": "Beca otorgada por Fundación Empujar. Diseño y ejecución de pruebas manuales, reporte de bugs, testing funcional/exploratorio/regresión, e introducción a QA Automation.",
-      "edu3.title": "Programa de Empleabilidad y Habilidades Blandas — Fundación Empujar",
-      "edu3.desc": "Capacitación en herramientas para la inserción laboral: desarrollo de competencias laborales, habilidades socioemocionales, autoconocimiento y empleabilidad. Fortalecimiento de comunicación, proactividad, trabajo en equipo, autonomía y liderazgo.",
-      "edu1.date": "Mar 2026 – Jul 2026",
-      "edu2.date": "Nov 2025 – Dic 2025",
-      "edu3.date": "Ago 2025 – Dic 2025",
-
-      "contact.title": "Contacto",
-      "contact.location": "Buenos Aires, Argentina",
-      "contact.connect_title": "Conecta conmigo",
-      "languages.title": "Idiomas",
-      "languages.english": "Inglés",
-      "languages.spanish": "Español",
-      "contact.download_cv": "Descargar CV",
-      "contact.send_email": "Enviar email",
-
-      "footer.copy": "© {year} — Todos los derechos reservados."
-    }
-  };
-
-  // storage key and default language
-  const STORAGE_KEY = "siteLang";
-  const DEFAULT = (navigator.language && navigator.language.toLowerCase().startsWith("es")) ? "es" : "en";
-
-  function getSavedLang() {
-    return localStorage.getItem(STORAGE_KEY) || DEFAULT;
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
   }
 
-  function saveLang(lang) {
-    localStorage.setItem(STORAGE_KEY, lang);
-  }
+  // Menú hamburguesa (mobile)
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileNav = document.getElementById("mobile-nav");
 
-  function formatString(template, vars) {
-    return template.replace(/\{(\w+)\}/g, function (m, k) {
-      return (vars && vars[k] !== undefined) ? vars[k] : m;
+  if (menuToggle && mobileNav) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mobileNav.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    mobileNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileNav.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
     });
   }
 
-  function applyTranslations(lang) {
-    const map = translations[lang] || translations.en;
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-      const key = el.getAttribute("data-i18n");
-      const attr = el.getAttribute("data-i18n-attr");
-      let text = map[key];
-      if (text === undefined) return;
-      text = formatString(text, { year: new Date().getFullYear() });
-      if (attr) {
-        el.setAttribute(attr, text);
-      } else {
-        el.textContent = text;
-      }
-      const cvButton = document.getElementById("cv-download");
+  document.querySelectorAll(".carousel").forEach(carousel => {
+    const images = carousel.querySelectorAll(".carousel-image");
+    const dots = carousel.querySelectorAll(".dot");
 
-      if (cvButton) {
-        if (lang === "en") {
-          cvButton.href = 
-             "https://raw.githubusercontent.com/Agusrodriguezx/Portfolio-Web/main/assets/CVs/Agustina-Rodriguez-EN.pdf";
+    let current = 0;
+
+    function showSlide(index) {
+      images.forEach(img => img.classList.remove("active"));
+      dots.forEach(dot => dot.classList.remove("active"));
+
+      images[index].classList.add("active");
+      dots[index].classList.add("active");
+      current = index;
+    }
+
+    carousel.querySelector(".next").addEventListener("click", () => {
+      showSlide((current + 1) % images.length);
+    });
+
+    carousel.querySelector(".prev").addEventListener("click", () => {
+      showSlide((current - 1 + images.length) % images.length);
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        showSlide(index);
+      });
+    });
+
+    // Swipe para mobile
+    let touchStartX = 0;
+    const SWIPE_THRESHOLD = 40;
+
+    carousel.addEventListener("touchstart", (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    carousel.addEventListener("touchend", (e) => {
+      const touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+
+      if (Math.abs(diff) > SWIPE_THRESHOLD) {
+        if (diff > 0) {
+          showSlide((current + 1) % images.length);
         } else {
-          cvButton.href = 
-             "https://raw.githubusercontent.com/Agusrodriguezx/Portfolio-Web/main/assets/CVs/Agustina-Rodriguez-ES.pdf";
+          showSlide((current - 1 + images.length) % images.length);
         }
       }
-    });
-
-    saveLang(lang);
-    updateSelectorUI(lang);
-    try { document.documentElement.lang = (lang === 'es') ? 'es' : 'en'; } catch (e) {}
-  }
-
-  function updateSelectorUI(lang) {
-    document.querySelectorAll(".lang-btn").forEach(btn => {
-      const is = (btn.dataset.lang === lang);
-      btn.setAttribute("aria-pressed", is ? "true" : "false");
-    });
-  }
-
-  function initLangSelector() {
-    const container = document.getElementById("lang-selector");
-    if (!container) return;
-    container.addEventListener("click", function (ev) {
-      const btn = ev.target.closest(".lang-btn");
-      if (!btn) return;
-      const lang = btn.dataset.lang;
-      if (!lang) return;
-      applyTranslations(lang);
-    });
-
-    container.addEventListener("keydown", function (ev) {
-      const btn = ev.target.closest(".lang-btn");
-      if (!btn) return;
-      if (ev.key === "Enter" || ev.key === " ") {
-        ev.preventDefault();
-        btn.click();
-      }
-    });
-  }
-
-  document.addEventListener("DOMContentLoaded", function () {
-    initLangSelector();
-    const lang = getSavedLang();
-    applyTranslations(lang);
+    }, { passive: true });
   });
+})();(function () {
+  const yearEl = document.getElementById("year");
 
-  window.__siteTranslations = { translations, applyTranslations };
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
+  // Menú hamburguesa (mobile)
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileNav = document.getElementById("mobile-nav");
+
+  if (menuToggle && mobileNav) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mobileNav.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    mobileNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileNav.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  document.querySelectorAll(".carousel").forEach(carousel => {
+    const images = carousel.querySelectorAll(".carousel-image");
+    const dots = carousel.querySelectorAll(".dot");
+
+    let current = 0;
+
+    function showSlide(index) {
+      images.forEach(img => img.classList.remove("active"));
+      dots.forEach(dot => dot.classList.remove("active"));
+
+      images[index].classList.add("active");
+      dots[index].classList.add("active");
+      current = index;
+    }
+
+    carousel.querySelector(".next").addEventListener("click", () => {
+      showSlide((current + 1) % images.length);
+    });
+
+    carousel.querySelector(".prev").addEventListener("click", () => {
+      showSlide((current - 1 + images.length) % images.length);
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        showSlide(index);
+      });
+    });
+
+    // Swipe para mobile
+    let touchStartX = 0;
+    const SWIPE_THRESHOLD = 40;
+
+    carousel.addEventListener("touchstart", (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    carousel.addEventListener("touchend", (e) => {
+      const touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+
+      if (Math.abs(diff) > SWIPE_THRESHOLD) {
+        if (diff > 0) {
+          showSlide((current + 1) % images.length);
+        } else {
+          showSlide((current - 1 + images.length) % images.length);
+        }
+      }
+    }, { passive: true });
+  });
 })();
