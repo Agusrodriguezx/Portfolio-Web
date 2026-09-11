@@ -139,5 +139,20 @@
         diff > 0 ? showSlide((current + 1) % images.length) : showSlide((current - 1 + images.length) % images.length);
       }
     }, { passive: true });
+
+    // Observer para animaciones al hacer scroll
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          // Opcional: deja de observar una vez que ya se animó
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15 // Se activa cuando el 15% del elemento es visible
+    });
+    
+    document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
   });
 })();
