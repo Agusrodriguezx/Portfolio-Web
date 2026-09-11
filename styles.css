@@ -984,7 +984,7 @@ a:focus {
    ========================================================================== */
 @media (max-width: 699px) {
   h2[id],section[id] {
-    scroll-margin-top: 140px; 
+    scroll-margin-top: 120px; 
   }
    
   body {
