@@ -3,9 +3,9 @@
 */
 :root{
   --accent: #6B1724; /* bordó principal */
-  --accent-soft: #F4EAEB; /* rosa/crema suave para badges y cards destacadas */
+  --accent-soft: #F4EAEB; /* rosa/crema suave, solo para badges/chips puntuales */
   --accent-ink: #4F111A; /* bordó oscuro para hover/estados activos */
-  --bg: #F8FAFC; /* fondo general gris frío claro */
+  --bg: #F4F6F8; /* fondo general gris muy claro */
   --surface: #ffffff;
   --text: #1E293B; /* slate oscuro para texto principal */
   --muted: #64748B; /* slate medio para texto secundario */
@@ -21,9 +21,10 @@ body{
   margin:0;
   background:var(--bg);
   color:var(--text);
+  font-size:16px;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-  line-height:1.5;
+  line-height:1.6;
   padding-bottom:40px;
 }
 
@@ -51,7 +52,7 @@ body{
   align-items:center;
   text-align:center;
   gap:1.4rem;
-  padding:72px 1rem;
+  padding:144px 1rem;
   margin-top:0;
 }
 
@@ -71,15 +72,24 @@ body{
 
 .hero-greeting{
   margin:0;
-  font-size:1rem;
+  font-size:1.05rem;
   color:var(--muted);
   font-weight:500;
 }
 
-.hero-role{
-  margin:0.3rem 0 0.9rem;
-  font-size:1.6rem;
+.hero-name{
+  margin:0.2rem 0 0.4rem;
+  font-size:2.6rem;
   font-weight:700;
+  color:var(--text);
+  letter-spacing:-0.02em;
+  line-height:1.1;
+}
+
+.hero-role{
+  margin:0 0 1.1rem;
+  font-size:1.2rem;
+  font-weight:600;
   color:var(--accent-ink);
   letter-spacing:-0.01em;
 }
@@ -87,25 +97,9 @@ body{
 .hero-value{
   margin:0 0 1.3rem;
   font-size:1rem;
+  font-weight:300;
   color:var(--text);
   line-height:1.6;
-}
-
-.hero-stack{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:8px;
-  margin-bottom:1.5rem;
-}
-
-.hero-stack span{
-  background:var(--accent-soft);
-  color:var(--accent-ink);
-  font-family:var(--mono);
-  font-size:0.78rem;
-  padding:4px 10px;
-  border-radius:999px;
 }
 
 .hero-actions{
@@ -148,6 +142,11 @@ body{
   background:var(--accent-soft);
 }
 
+.contact-cta{
+  display:inline-flex;
+  margin:0.6rem 0 1.8rem;
+}
+
 @media(min-width:700px){
   .hero{
     flex-direction:row;
@@ -156,7 +155,7 @@ body{
     gap:2.2rem;
   }
 
-  .hero-stack, .hero-actions{
+  .hero-actions{
     justify-content:flex-start;
   }
 
@@ -190,7 +189,7 @@ body{
 /* Header */
 .header{
   border-bottom: 1px solid var(--border);
-  background: linear-gradient(0deg, var(--accent-soft) 0%, transparent 90%);
+  background: var(--surface);
 }
 
 .header-inner{
@@ -213,24 +212,22 @@ body{
 }
 
 /* Sections */
-.section{margin-top:64px}
+.section{margin-top:128px}
 .section-title{
-  font-size:1rem;
-  margin:0 0 0.8rem;
-  color:var(--accent);
+  font-size:1.5rem;
+  margin:0 0 1.4rem;
+  color:var(--text);
   font-weight:700;
-  letter-spacing:0.2px;
-  text-transform:uppercase;
-  font-size:0.85rem;
+  letter-spacing:-0.01em;
 }
 
 /* Cards */
 .card{
   background:var(--surface);
-  border:1px solid var(--border);
-  padding:1.75rem;
+  border:none;
+  padding:3.5rem;
   border-radius:var(--radius);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(15,23,42,0.06), 0 4px 12px rgba(15,23,42,0.04);
 }
 
 /* Skills */
@@ -273,7 +270,7 @@ body{
 }
 
 .language-item strong{
-  color: var(--accent);
+  color: var(--text);
 }
 
 .language-item span{
@@ -282,18 +279,15 @@ body{
 
 /* Projects */
 .project-card{
+  background:var(--surface);
+  border-radius:var(--radius);
+  box-shadow: 0 1px 3px rgba(15,23,42,0.06), 0 4px 12px rgba(15,23,42,0.04);
+  padding:1.75rem;
   margin-top:0;
-  padding-top:1.2rem;
-}
-
-.project-card:first-of-type{
-  padding-top:0;
 }
 
 .project-card + .project-card{
-  margin-top:1.2rem;
-  padding-top:1.2rem;
-  border-top:1px solid var(--border);
+  margin-top:1.5rem;
 }
 
 .project-head{
@@ -304,7 +298,7 @@ body{
   gap:8px;
   margin-bottom:4px;
 }
-.project-head h3{margin:0;font-size:1.02rem}
+.project-head h3{margin:0;font-size:1.15rem;font-weight:700;color:var(--text)}
 .project-tech{
   font-family:var(--mono);
   font-size:0.78rem;
