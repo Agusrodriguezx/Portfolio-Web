@@ -991,7 +991,10 @@ a:focus {
   }
 
   .hero {
-    padding: 28px 1rem 12px;
+    padding-top: 48px !important;
+    padding-bottom: 32px !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
     gap: 1rem;
   }
 
