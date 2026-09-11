@@ -2,7 +2,7 @@
 
 Este repositorio contiene el código fuente de mi portfolio profesional, diseñado para presentar mi experiencia, proyectos destacados y habilidades tanto en **QA Manual** como en **QA Automation**.
 
- **Demo en vivo:** [Tu Link de GitHub Pages o Vercel]
+ **Demo en vivo:** https://agustina-rodriguez-portfolio.vercel.app/
 
 ---
 
@@ -44,39 +44,4 @@ Este repositorio contiene el código fuente de mi portfolio profesional, diseña
 
 ## Contacto:
 - **Email:** agustinar766@gmail.com
-- **LinkedIn:** https://linkedin.com/in/agustinarodriguezx/* **Navegación Fluida:** Scroll suave (`scroll-behavior: smooth`) con compensación de altura (`scroll-margin-top`) para el encabezado fijo.
-* **Carrusel de Evidencias:** Galerías interactivas en los proyectos para visualizar capturas de pantalla, reportes e incidencias.
-* **Diseño Accesible:** Uso de marcas semánticas (`<header>`, `<main>`, `<section>`, `<article>`), skip-links y contraste adaptado.
-
----
-
-##  Estructura del Proyecto
-
-Portfolio
-├── assets/          # Imágenes de proyectos, favicon y archivos estáticos (PDF CV)
-├── js/
-│   ├── translations.js  # Objeto JSON/JS con las traducciones (ES/EN)
-│   └── script.js        # Lógica para i18n, menú mobile y carruseles
-├── styles.css       # Estilos globales, variables y Media Queries
-└── index.html       # Estructura semántica principal 
-
----
-
-## Cómo previsualizar localmente:
-1. Clonar el repo:
-   git clone https://github.com/Agusrodriguezx/Portfolio-Web.git
-2. Abrir index.html en el navegador (doble clic) o lanzar un servidor estático rápido:
-   - Python 3: python -m http.server 8000
-   - Node (si tenés http-server): npx http-server . -p 8000
-   Luego abrir http://localhost:8000
-
-## Deploy en Vercel:
-- En Vercel seleccionar "Import Project" → Git Repository → Agusrodriguezx/Portfolio-Web
-- Framework: "Other" o "Static"
-- Build & Output: no hace falta comando de build. Output directory: / (o dejar vacío)
-
----
-
-## Contacto:
-- Email: agustinar766@gmail.com
-- LinkedIn: https://linkedin.com/in/agustinarodriguezx/
+- **LinkedIn:** https://linkedin.com/in/agustinarodriguezx/
