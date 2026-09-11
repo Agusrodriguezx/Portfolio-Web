@@ -32,7 +32,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
-  padding-top: 70px; /* Compensación por header fijo */
+  padding-top: 70px;
   padding-bottom: 40px;
 }
 
@@ -334,7 +334,7 @@ body {
 }
 
 .section:first-of-type {
-  margin-top: 22px; /* Margen reducido entre Hero y la primera sección */
+  margin-top: 22px; 
 }
 
 .section-title {
@@ -976,7 +976,7 @@ a:focus {
    ========================================================================== */
 @media (max-width: 699px) {
   body {
-    padding-top: 55px; /* Ajuste compensatorio para header móvil */
+    padding-top: 55px;
   }
 
   .hero {
