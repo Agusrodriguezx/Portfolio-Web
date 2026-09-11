@@ -24,7 +24,7 @@
   const lightbox = document.createElement("div");
   lightbox.className = "lightbox";
   lightbox.innerHTML = `
-    <button type="button" class="lightbox-close" aria-label="Cerrar">✕</button>
+    <button type="button" class="lightbox-close" aria-label="Cerrar">&times;</button>
     <button type="button" class="lightbox-btn lightbox-prev" aria-label="Anterior">❮</button>
     <img class="lightbox-image" src="" alt="">
     <button type="button" class="lightbox-btn lightbox-next" aria-label="Siguiente">❯</button>
