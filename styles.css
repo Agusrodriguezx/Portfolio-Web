@@ -226,7 +226,7 @@ body{
 
 /* Sections */
 .section {margin-top: 96px}
-.section:first-of-type {margin-top: 32px}
+.section:first-of-type {margin-top: 22px}
 .section-title{
   font-size:1.5rem;
   margin:0 0 1.4rem;
