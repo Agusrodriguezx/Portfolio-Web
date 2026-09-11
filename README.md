@@ -1,4 +1,4 @@
-# Portfolio Web — Agustina Rodríguez | QA Tester
+# Portfolio Web — Agustina Rodriguez | QA Tester
 
 Este repositorio contiene el código fuente de mi portfolio profesional, diseñado para presentar mi experiencia, proyectos destacados y habilidades tanto en **QA Manual** como en **QA Automation**.
 
